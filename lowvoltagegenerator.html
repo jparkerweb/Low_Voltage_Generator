@@ -129,12 +129,16 @@ $(document).ready(function () {
         NewzB,
         NZBMatrixEU,
         UsenetCrawler,
-        NZBZombie;
+        NZBZombie,
+		Nzb7,
+		Nzbs2go;
 	privNZB = " <a target='_blank' title='privNZB' href='http://209.123.242.18/search/" + tSearchString + "'> <img height='24px' width='24px' border='0' align='absmiddle' src='icons/privnzb.png' \/><\/a> ";
 	NewzB = " <a target='_blank' title='NewzB' href='http://newzb.net/search/" + tSearchString + "'> <img height='24px' width='24px' border='0' align='absmiddle' src='icons/newzb.png' \/><\/a> ";
 	NZBMatrixEU = " <a target='_blank' title='NZBMatrixEU' href='http://www.nzb-matrix.eu/search/" + tSearchString + "'> <img height='24px' width='24px' border='0' align='absmiddle' src='icons/nzbmatrix.png' \/><\/a> ";
 	UsenetCrawler = " <a target='_blank' title='UsenetCrawler' href='http://www.usenet-crawler.com/search/" + tSearchString + "'> <img height='24px' width='24px' border='0' align='absmiddle' src='icons/usenetcrawler.png' \/><\/a> ";
 	NZBZombie = " <a target='_blank' title='NZBZombie' href='https://www.nzbzombie.com/search/" + tSearchString + "'> <img height='24px' width='24px' border='0' align='absmiddle' src='icons/nzbzombie.png' \/><\/a> ";
+	Nzb7 = " <a target='_blank' title='Nzb7' href='http://www.nzb7.com/search/" + tSearchString + "'> <img height='24px' width='24px' border='0' align='absmiddle' src='icons/nzb7.png' \/><\/a> ";
+	Nzbs2go = " <a target='_blank' title='Nzbs2go' href='http://www.nzbs4u.net/search/" + tSearchString + "'> <img height='24px' width='24px' border='0' align='absmiddle' src='icons/nzbs2go.png' \/><\/a> ";
 			
 	//newznab private
     var NzbsScadia;
@@ -179,7 +183,7 @@ $(document).ready(function () {
 		
 	//add new html content to page
 	$("#divLinks").attr('nowrap', 'nowrap');
-	$("#divLinks").append('<table border="0"><tr><td class="title">nzb...<\/td><td>' + DogNZB + nzb4u + NZBsDotOrg + NZBsRus + NZBIndex + OMGWTFNZBz + NZBClub + FindNzb + NzbX + '<\/td><\/tr>' + '<tr><td class="title">spotweb...<\/td><td>' + NZBFactor + '<\/td><\/tr>' + '<tr><td class="title">newznab...<\/td><td>' + privNZB + NzbsScadia + NewzB + NZBMatrixEU + UsenetCrawler + NZBZombie + '<\/td><\/tr>' + '<tr><td class="title">torrent:.<\/td><td>' + BTDigg + NewTorrents + KickAssTorrents + ThePirateBay + ExtraTorrent + '<\/td><\/tr>' + '<tr><td class="title">other...<\/td><td>' + NzbRss + EasyNews + '<\/td><\/tr>' + '<tr><td class="title">xdcc...' + ExcursionScript + '<\/td><td>' + XDCCMe + XDCCFinder + SunXDCC + '<\/td><\/tr>' + '<tr><td class="title">file.lockers...<\/td><td>' + FilesTube + '<\/td><\/tr>' + '<tr><td class="title">pre.db...<\/td><td>' + PreDbMe + '<\/td><\/tr>' + '<\/table>');
+	$("#divLinks").append('<table border="0"><tr><td class="title">nzb...<\/td><td>' + DogNZB + nzb4u + NZBsDotOrg + NZBsRus + NZBIndex + OMGWTFNZBz + NZBClub + FindNzb + NzbX + '<\/td><\/tr>' + '<tr><td class="title">spotweb...<\/td><td>' + NZBFactor + '<\/td><\/tr>' + '<tr><td class="title">newznab...<\/td><td>' + privNZB + NzbsScadia + NewzB + NZBMatrixEU + UsenetCrawler + NZBZombie + Nzbs2go + Nzb7 + '<\/td><\/tr>' + '<tr><td class="title">torrent:.<\/td><td>' + BTDigg + NewTorrents + KickAssTorrents + ThePirateBay + ExtraTorrent + '<\/td><\/tr>' + '<tr><td class="title">other...<\/td><td>' + NzbRss + EasyNews + '<\/td><\/tr>' + '<tr><td class="title">xdcc...' + ExcursionScript + '<\/td><td>' + XDCCMe + XDCCFinder + SunXDCC + '<\/td><\/tr>' + '<tr><td class="title">file.lockers...<\/td><td>' + FilesTube + '<\/td><\/tr>' + '<tr><td class="title">pre.db...<\/td><td>' + PreDbMe + '<\/td><\/tr>' + '<\/table>');
 });
 
 </script>
