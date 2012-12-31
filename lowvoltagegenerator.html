@@ -74,7 +74,7 @@ function getLinks(priv) {
 }
 
 if (getURLVars('txtInput') !== '') {
-    window.document.write("<div id='outerdiv' align='center'><span class='lowvoltagegenerator'>Low Voltage Generator <img src='icons/lowvoltage.png' align='absmiddle' \/><\/span><div id='innerdiv'>Links for: <span class='search'>" + getURLVars('txtInput') + "<\/span><br \/><br \/><div id='divLinks'><\/div><br \/><div align='right'><span onClick='javascript:getLinks(1);'>search<\/span> text: <input type='text' id='txtInput' name='txtInput' \/> <input type='button' value='generate links' onClick='javascript:getLinks();'<\/div><br \/><\/div>");
+    window.document.write("<div id='outerdiv' align='center'><span class='lowvoltagegenerator'>Low Voltage Generator <img src='icons/lowvoltage.png' align='absmiddle' \/><\/span><div id='innerdiv'>Links for: <span class='search'>" + getURLVars('txtInput') + "<\/span><br \/><br \/><div id='divLinks'><\/div><br \/><div align='right'><span onClick='javascript:getLinks(1);'>search<\/span> text: <input type='text' id='txtInput' name='txtInput' \/> <input type='button' value='generate links' onClick='javascript:getLinks();'<\/div><br \/><br \/><a href='https://github.com/jparkerweb/Low_Voltage_Generator' target='github'><img src='github.png' \/><\/a><\/div>");
 } else {
     window.document.write("<div id='outerdiv' align='center'><span class='lowvoltagegenerator'>Low Voltage Generator <img src='icons/lowvoltage.png' align='absmiddle' \/><\/span><div id='innerdiv'><div align='right'><span onClick='javascript:getLinks(1);'>search<\/span> text: <input type='text' id='txtInput' name='txtInput' \/> <input type='button' value='generate links' onClick='javascript:getLinks();'<\/div>");
 }
