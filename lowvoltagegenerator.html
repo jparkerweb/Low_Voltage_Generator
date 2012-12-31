@@ -109,7 +109,8 @@ $(document).ready(function () {
         DogNZB,
         NZBClub,
         FindNzb,
-        NzbX;
+        NzbX,
+		NZBGeek;
 	EasyNews = " <a target='_blank' title='EasyNews' href='http://members.easynews.com/global4/search.html?gps=" + tSearchString + "&amp;fty[]=VIDEO&amp;fty[]=PARITY&amp;s1=dsize&amp;s1d=-&amp;s2=dtime&amp;s2d=-&amp;s3=nrfile&amp;s3d=%2B&amp;pby=100&amp;pno=1&amp;sS=0&amp;u=1&amp;hthm=1&amp;fly=2'> <img height='24px' width='24px' border='0' align='absmiddle' src='icons/easynews.png' \/><\/a> ";
 	nzb4u = " <a target='_blank' title='nzb4u' href='http://nzb4u.me/search?q=" + tSearchString + "'> <img height='24px' width='24px' border='0' align='absmiddle' src='icons/nzb4u.png' \/><\/a> ";
 	NZBsDotOrg = " <a target='_blank' title='NZBs' href='http://nzbs.org/search/" + tSearchString + "'> <img height='24px' width='24px' border='0' align='absmiddle' src='icons/nzbsdotorg.png' \/><\/a> ";
@@ -120,7 +121,8 @@ $(document).ready(function () {
 	NZBClub = " <a target='_blank' title='NZBClub' href='http://www.nzbclub.com/search.aspx?q=" + tSearchString + "'> <img height='24px' width='24px' border='0' align='absmiddle' src='icons/nzbclub.png' \/><\/a> ";
 	FindNzb = " <a target='_blank' title='FindNzb' href='http://findnzb.net/?q=" + tSearchString + "'> <img height='24px' width='24px' border='0' align='absmiddle' src='icons/findnzb.png' \/><\/a> ";
 	NzbX = " <a target='_blank' title='NzbX' href='https://nzbx.co/s?q=" + tSearchString + "'> <img height='24px' width='24px' border='0' align='absmiddle' src='icons/nzbx.png' \/><\/a> ";
-	
+	NZBGeek = " <a target='_blank' title='NZBGeek' href='https://index.nzbgeek.info/search/" + tSearchString + "'> <img height='24px' width='24px' border='0' align='absmiddle' src='icons/nzbgeek.png' \/><\/a> ";
+		
 	//spotweb
     var NZBFactor;
 	NZBFactor = " <a target='_blank' title='NZBFactor' href='http://www.nzbfactor.com/spotweb/?page=index&search[tree]=&sortby=stamp&sortdir=DESC&search[value][]=Titel:%3D:%22" + tSearchString + "%22'> <img height='24px' width='24px' border='0' align='absmiddle' src='icons/nzbfactor.png' \/><\/a> ";
@@ -186,7 +188,7 @@ $(document).ready(function () {
 		
 	//add new html content to page
 	$("#divLinks").attr('nowrap', 'nowrap');
-	$("#divLinks").append('<table border="0"><tr><td class="title">nzb...<\/td><td>' + DogNZB + nzb4u + NZBsDotOrg + NZBsRus + NZBIndex + OMGWTFNZBz + NZBClub + FindNzb + NzbX + '<\/td><\/tr>' + '<tr><td class="title">spotweb...<\/td><td>' + NZBFactor + '<\/td><\/tr>' + '<tr><td class="title">newznab...<\/td><td>' + privNZB + NzbsScadia + NewzB + NZBMatrixEU + UsenetCrawler + NZBZombie + Nzbs2go + Nzb7 + '<\/td><\/tr>' + '<tr><td class="title">torrent:.<\/td><td>' + BTDigg + NewTorrents + KickAssTorrents + ThePirateBay + ExtraTorrent + '<\/td><\/tr>' + '<tr><td class="title">other...<\/td><td>' + NzbRss + EzTv + EasyNews + '<\/td><\/tr>' + '<tr><td class="title">xdcc...' + ExcursionScript + '<\/td><td>' + XDCCMe + XDCCFinder + SunXDCC + '<\/td><\/tr>' + '<tr><td class="title">file.lockers...<\/td><td>' + FilesTube + '<\/td><\/tr>' + '<tr><td class="title">pre.db...<\/td><td>' + PreDbMe + '<\/td><\/tr>' + '<\/table>');
+	$("#divLinks").append('<table border="0"><tr><td class="title">nzb...<\/td><td>' + DogNZB + nzb4u + NZBsDotOrg + NZBsRus + NZBIndex + OMGWTFNZBz + NZBClub + FindNzb + NzbX + NZBGeek + '<\/td><\/tr>' + '<tr><td class="title">spotweb...<\/td><td>' + NZBFactor + '<\/td><\/tr>' + '<tr><td class="title">newznab...<\/td><td>' + privNZB + NzbsScadia + NewzB + NZBMatrixEU + UsenetCrawler + NZBZombie + Nzbs2go + Nzb7 + '<\/td><\/tr>' + '<tr><td class="title">torrent:.<\/td><td>' + BTDigg + NewTorrents + KickAssTorrents + ThePirateBay + ExtraTorrent + '<\/td><\/tr>' + '<tr><td class="title">other...<\/td><td>' + NzbRss + EzTv + EasyNews + '<\/td><\/tr>' + '<tr><td class="title">xdcc...' + ExcursionScript + '<\/td><td>' + XDCCMe + XDCCFinder + SunXDCC + '<\/td><\/tr>' + '<tr><td class="title">file.lockers...<\/td><td>' + FilesTube + '<\/td><\/tr>' + '<tr><td class="title">pre.db...<\/td><td>' + PreDbMe + '<\/td><\/tr>' + '<\/table>');
 });
 
 </script>
