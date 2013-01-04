@@ -183,12 +183,14 @@ $(document).ready(function () {
 	FilesTube = " <a target='_blank' title='FilesTube' href='http://www.filestube.com/search.html?q=" + tSearchString + "'> <img height='24px' width='24px' border='0' align='absmiddle' src='icons/filestube.png' width='16' height='16' \/><\/a> ";
 
 	//PreDBs
-    var PreDbMe;
+    var PreDbMe,
+		OrlyDB;
 	PreDbMe = " <a target='_blank' title='PreDBMe' href='http://predb.me/?search=" + tSearchString + "'> <img height='24px' width='24px' border='0' align='absmiddle' src='icons/predbme.png' width='16' height='16' \/><\/a> ";
-		
+	OrlyDB = " <a target='_blank' title='OrlyDB' href='http://www.orlydb.com/?q=" + tSearchString + "'> <img height='24px' width='24px' border='0' align='absmiddle' src='icons/orlydb.png' width='16' height='16' \/><\/a> ";
+			
 	//add new html content to page
 	$("#divLinks").attr('nowrap', 'nowrap');
-	$("#divLinks").append('<table border="0"><tr><td class="title">nzb...<\/td><td>' + DogNZB + nzb4u + NZBsDotOrg + NZBsRus + NZBIndex + OMGWTFNZBz + NZBClub + FindNzb + NzbX + NZBGeek + '<\/td><\/tr>' + '<tr><td class="title">spotweb...<\/td><td>' + NZBFactor + '<\/td><\/tr>' + '<tr><td class="title">newznab...<\/td><td>' + privNZB + NzbsScadia + NewzB + NZBMatrixEU + UsenetCrawler + NZBZombie + Nzbs2go + Nzb7 + '<\/td><\/tr>' + '<tr><td class="title">torrent:.<\/td><td>' + BTDigg + NewTorrents + KickAssTorrents + ThePirateBay + ExtraTorrent + '<\/td><\/tr>' + '<tr><td class="title">other...<\/td><td>' + NzbRss + EzTv + EasyNews + '<\/td><\/tr>' + '<tr><td class="title">xdcc...' + ExcursionScript + '<\/td><td>' + XDCCMe + XDCCFinder + SunXDCC + '<\/td><\/tr>' + '<tr><td class="title">file.lockers...<\/td><td>' + FilesTube + '<\/td><\/tr>' + '<tr><td class="title">pre.db...<\/td><td>' + PreDbMe + '<\/td><\/tr>' + '<\/table>');
+	$("#divLinks").append('<table border="0"><tr><td class="title">nzb...<\/td><td>' + DogNZB + nzb4u + NZBsDotOrg + NZBsRus + NZBIndex + OMGWTFNZBz + NZBClub + FindNzb + NzbX + NZBGeek + '<\/td><\/tr>' + '<tr><td class="title">spotweb...<\/td><td>' + NZBFactor + '<\/td><\/tr>' + '<tr><td class="title">newznab...<\/td><td>' + privNZB + NzbsScadia + NewzB + NZBMatrixEU + UsenetCrawler + NZBZombie + Nzbs2go + Nzb7 + '<\/td><\/tr>' + '<tr><td class="title">torrent:.<\/td><td>' + BTDigg + NewTorrents + KickAssTorrents + ThePirateBay + ExtraTorrent + '<\/td><\/tr>' + '<tr><td class="title">other...<\/td><td>' + NzbRss + EzTv + EasyNews + '<\/td><\/tr>' + '<tr><td class="title">xdcc...' + ExcursionScript + '<\/td><td>' + XDCCMe + XDCCFinder + SunXDCC + '<\/td><\/tr>' + '<tr><td class="title">file.lockers...<\/td><td>' + FilesTube + '<\/td><\/tr>' + '<tr><td class="title">pre.db...<\/td><td>' + PreDbMe + OrlyDB + '<\/td><\/tr>' + '<\/table>');
 });
 
 </script>
