@@ -165,6 +165,7 @@ $(document).ready(function () {
         ThePirateBay,
         ExtraTorrent,
 		ISOHunt,
+		BitSnoop,
 		l337x,
 		h33t;
 	BTDigg = " <a target='_blank' title='BTDigg' href='http://btdigg.org/search?q=" + tSearchStringPlus + "'> <img height='24px' width='24px' border='0' align='absmiddle' src='icons/btdigg.png' width='16' height='16' \/><\/a> ";
@@ -173,6 +174,7 @@ $(document).ready(function () {
 	ThePirateBay = " <a target='_blank' title='ThePirateBay' href='http://thepiratebay.org/search/" + tSearchString + "'> <img height='24px' width='24px' border='0' align='absmiddle' src='icons/thepiratebay.png' width='16' height='16' \/><\/a> ";
 	ExtraTorrent = " <a target='_blank' title='ExtraTorrent' href='http://extratorrent.com/search/?search=" + tSearchStringPlus + "'> <img height='24px' width='24px' border='0' align='absmiddle' src='icons/extratorrent.png' width='16' height='16' \/><\/a> ";
 	ISOHunt = " <a target='_blank' title='ISOHunt' href='http://isohunt.com/torrents/?ihq=" + tSearchStringPlus + "'> <img height='24px' width='24px' border='0' align='absmiddle' src='icons/isohunt.png' width='16' height='16' \/><\/a> ";
+	BitSnoop = " <a target='_blank' title='BitSnoop' href='http://bitsnoop.com/search/all/" + tSearchStringPlus + "'> <img height='24px' width='24px' border='0' align='absmiddle' src='icons/bitsnoop.png' width='16' height='16' \/><\/a> ";
 	l337x = " <a target='_blank' title='1337x' href='http://1337x.org/search/" + tSearchStringPlus + "/0/'> <img height='24px' width='24px' border='0' align='absmiddle' src='icons/1337x.png' width='16' height='16' \/><\/a> ";
 	h33t = " <a target='_blank' title='h33t' href='http://h33t.com/search/" + tSearchStringPlus + "'> <img height='24px' width='24px' border='0' align='absmiddle' src='icons/h33t.png' width='16' height='16' \/><\/a> ";
 				
@@ -200,7 +202,7 @@ $(document).ready(function () {
 			
 	//add new html content to page
 	$("#divLinks").attr('nowrap', 'nowrap');
-	$("#divLinks").append('<table border="0"><tr><td class="title">nzb...<\/td><td>' + DogNZB + nzb4u + NZBsDotOrg + NZBsRus + NZBIndex + OMGWTFNZBz + NZBClub + FindNzb + NzbX + NZBGeek + '<\/td><\/tr>' + '<tr><td class="title">spotweb...<\/td><td>' + NZBFactor + '<\/td><\/tr>' + '<tr><td class="title">newznab...<\/td><td>' + NzbsScadia + NewzB + NZBMatrixEU + UsenetCrawler + NZBZombie + Nzbs2go + Nzb7 + '<\/td><\/tr>' + '<tr><td class="title">torrent:.<\/td><td>' + BTDigg + NewTorrents + KickAssTorrents + ThePirateBay + ExtraTorrent + ISOHunt + l337x + h33t + '<\/td><\/tr>' + '<tr><td class="title">other...<\/td><td>' + NzbRss + EzTv + EasyNews + '<\/td><\/tr>' + '<tr><td class="title">xdcc...' + ExcursionScript + '<\/td><td>' + XDCCMe + XDCCFinder + SunXDCC + '<\/td><\/tr>' + '<tr><td class="title">file.lockers...<\/td><td>' + FilesTube + '<\/td><\/tr>' + '<tr><td class="title">pre.db...<\/td><td>' + PreDbMe + OrlyDB + VCDQ + '<\/td><\/tr>' + '<\/table>');
+	$("#divLinks").append('<table border="0"><tr><td class="title">nzb...<\/td><td>' + DogNZB + nzb4u + NZBsDotOrg + NZBsRus + NZBIndex + OMGWTFNZBz + NZBClub + FindNzb + NzbX + NZBGeek + '<\/td><\/tr>' + '<tr><td class="title">spotweb...<\/td><td>' + NZBFactor + '<\/td><\/tr>' + '<tr><td class="title">newznab...<\/td><td>' + NzbsScadia + NewzB + NZBMatrixEU + UsenetCrawler + NZBZombie + Nzbs2go + Nzb7 + '<\/td><\/tr>' + '<tr><td class="title">torrent:.<\/td><td>' + BTDigg + NewTorrents + KickAssTorrents + ThePirateBay + ExtraTorrent + ISOHunt + BitSnoop + l337x + h33t + '<\/td><\/tr>' + '<tr><td class="title">other...<\/td><td>' + NzbRss + EzTv + EasyNews + '<\/td><\/tr>' + '<tr><td class="title">xdcc...' + ExcursionScript + '<\/td><td>' + XDCCMe + XDCCFinder + SunXDCC + '<\/td><\/tr>' + '<tr><td class="title">file.lockers...<\/td><td>' + FilesTube + '<\/td><\/tr>' + '<tr><td class="title">pre.db...<\/td><td>' + PreDbMe + OrlyDB + VCDQ + '<\/td><\/tr>' + '<\/table>');
 });
 
 </script>
