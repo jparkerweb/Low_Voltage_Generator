@@ -1,4 +1,5 @@
-/* glue: 0.3 hash: 9e1b92191d */
+/* glue: 0.3 hash: f7c897bc3c */
+.sprite-icons-lowvoltage2,
 .sprite-icons-lowvoltage,
 .sprite-icons-xdccme,
 .sprite-icons-xdccfinder,
@@ -40,44 +41,45 @@
 .sprite-icons-excursionscript,
 .sprite-icons-email_edit,
 .sprite-icons-p{background-image:url('../sprites/icons.png'); background-repeat:no-repeat; display:inline-block; vertical-align:text-top;}
-.sprite-icons-lowvoltage{background-position:-2px -2px;width:66px;height:66px;}
-.sprite-icons-xdccme{background-position:-72px -2px;width:26px;height:26px;}
-.sprite-icons-xdccfinder{background-position:-72px -32px;width:26px;height:26px;}
-.sprite-icons-vcdq{background-position:-2px -72px;width:26px;height:26px;}
-.sprite-icons-torrentzeu{background-position:-32px -72px;width:26px;height:26px;}
-.sprite-icons-thepiratebay{background-position:-62px -72px;width:26px;height:26px;}
-.sprite-icons-sunxdcc{background-position:-102px -2px;width:26px;height:26px;}
-.sprite-icons-predbme{background-position:-102px -32px;width:26px;height:26px;}
-.sprite-icons-oznzb{background-position:-102px -62px;width:26px;height:26px;}
-.sprite-icons-orlydb{background-position:-2px -102px;width:26px;height:26px;}
-.sprite-icons-omg{background-position:-32px -102px;width:26px;height:26px;}
-.sprite-icons-nzbzombie{background-position:-62px -102px;width:26px;height:26px;}
-.sprite-icons-nzbsu{background-position:-92px -102px;width:26px;height:26px;}
-.sprite-icons-nzbsdotorg{background-position:-132px -2px;width:26px;height:26px;}
-.sprite-icons-nzbs2go{background-position:-132px -32px;width:26px;height:26px;}
-.sprite-icons-nzbrss{background-position:-132px -62px;width:26px;height:26px;}
-.sprite-icons-nzbindexin{background-position:-132px -92px;width:26px;height:26px;}
-.sprite-icons-nzbindex{background-position:-2px -132px;width:26px;height:26px;}
-.sprite-icons-nzbgeek{background-position:-32px -132px;width:26px;height:26px;}
-.sprite-icons-nzbfinder{background-position:-62px -132px;width:26px;height:26px;}
-.sprite-icons-nzbclub{background-position:-92px -132px;width:26px;height:26px;}
-.sprite-icons-nzbag{background-position:-122px -132px;width:26px;height:26px;}
-.sprite-icons-newzb{background-position:-162px -2px;width:26px;height:26px;}
-.sprite-icons-newtorrents{background-position:-162px -32px;width:26px;height:26px;}
-.sprite-icons-kickasstorrents{background-position:-162px -62px;width:26px;height:26px;}
-.sprite-icons-isohunt{background-position:-162px -92px;width:26px;height:26px;}
-.sprite-icons-h33t{background-position:-162px -122px;width:26px;height:26px;}
-.sprite-icons-gingadaddy{background-position:-2px -162px;width:26px;height:26px;}
-.sprite-icons-freenzb{background-position:-32px -162px;width:26px;height:26px;}
-.sprite-icons-findnzb{background-position:-62px -162px;width:26px;height:26px;}
-.sprite-icons-filestube{background-position:-92px -162px;width:26px;height:26px;}
-.sprite-icons-fenopy{background-position:-122px -162px;width:26px;height:26px;}
-.sprite-icons-eztv{background-position:-152px -162px;width:26px;height:26px;}
-.sprite-icons-extratorrent{background-position:-192px -2px;width:26px;height:26px;}
-.sprite-icons-dognzb{background-position:-192px -32px;width:26px;height:26px;}
-.sprite-icons-btdigg{background-position:-192px -62px;width:26px;height:26px;}
-.sprite-icons-bitsnoop{background-position:-192px -92px;width:26px;height:26px;}
-.sprite-icons-1337x{background-position:-192px -122px;width:26px;height:26px;}
-.sprite-icons-excursionscript{background-position:-192px -152px;width:18px;height:18px;}
-.sprite-icons-email_edit{background-position:-2px -192px;width:18px;height:18px;}
-.sprite-icons-p{background-position:-214px -152px;width:3px;height:3px;}
+.sprite-icons-lowvoltage2{background-position:-2px -2px;width:66px;height:66px;}
+.sprite-icons-lowvoltage{background-position:-72px -2px;width:66px;height:66px;}
+.sprite-icons-xdccme{background-position:-2px -72px;width:26px;height:26px;}
+.sprite-icons-xdccfinder{background-position:-32px -72px;width:26px;height:26px;}
+.sprite-icons-vcdq{background-position:-62px -72px;width:26px;height:26px;}
+.sprite-icons-torrentzeu{background-position:-92px -72px;width:26px;height:26px;}
+.sprite-icons-thepiratebay{background-position:-2px -102px;width:26px;height:26px;}
+.sprite-icons-sunxdcc{background-position:-32px -102px;width:26px;height:26px;}
+.sprite-icons-predbme{background-position:-62px -102px;width:26px;height:26px;}
+.sprite-icons-oznzb{background-position:-92px -102px;width:26px;height:26px;}
+.sprite-icons-orlydb{background-position:-142px -2px;width:26px;height:26px;}
+.sprite-icons-omg{background-position:-142px -32px;width:26px;height:26px;}
+.sprite-icons-nzbzombie{background-position:-142px -62px;width:26px;height:26px;}
+.sprite-icons-nzbsu{background-position:-142px -92px;width:26px;height:26px;}
+.sprite-icons-nzbsdotorg{background-position:-2px -132px;width:26px;height:26px;}
+.sprite-icons-nzbs2go{background-position:-32px -132px;width:26px;height:26px;}
+.sprite-icons-nzbrss{background-position:-62px -132px;width:26px;height:26px;}
+.sprite-icons-nzbindexin{background-position:-92px -132px;width:26px;height:26px;}
+.sprite-icons-nzbindex{background-position:-122px -132px;width:26px;height:26px;}
+.sprite-icons-nzbgeek{background-position:-172px -2px;width:26px;height:26px;}
+.sprite-icons-nzbfinder{background-position:-172px -32px;width:26px;height:26px;}
+.sprite-icons-nzbclub{background-position:-172px -62px;width:26px;height:26px;}
+.sprite-icons-nzbag{background-position:-172px -92px;width:26px;height:26px;}
+.sprite-icons-newzb{background-position:-172px -122px;width:26px;height:26px;}
+.sprite-icons-newtorrents{background-position:-2px -162px;width:26px;height:26px;}
+.sprite-icons-kickasstorrents{background-position:-32px -162px;width:26px;height:26px;}
+.sprite-icons-isohunt{background-position:-62px -162px;width:26px;height:26px;}
+.sprite-icons-h33t{background-position:-92px -162px;width:26px;height:26px;}
+.sprite-icons-gingadaddy{background-position:-122px -162px;width:26px;height:26px;}
+.sprite-icons-freenzb{background-position:-152px -162px;width:26px;height:26px;}
+.sprite-icons-findnzb{background-position:-202px -2px;width:26px;height:26px;}
+.sprite-icons-filestube{background-position:-202px -32px;width:26px;height:26px;}
+.sprite-icons-fenopy{background-position:-202px -62px;width:26px;height:26px;}
+.sprite-icons-eztv{background-position:-202px -92px;width:26px;height:26px;}
+.sprite-icons-extratorrent{background-position:-202px -122px;width:26px;height:26px;}
+.sprite-icons-dognzb{background-position:-202px -152px;width:26px;height:26px;}
+.sprite-icons-btdigg{background-position:-2px -192px;width:26px;height:26px;}
+.sprite-icons-bitsnoop{background-position:-32px -192px;width:26px;height:26px;}
+.sprite-icons-1337x{background-position:-62px -192px;width:26px;height:26px;}
+.sprite-icons-excursionscript{background-position:-92px -192px;width:18px;height:18px;}
+.sprite-icons-email_edit{background-position:-114px -192px;width:18px;height:18px;}
+.sprite-icons-p{background-position:-202px -182px;width:3px;height:3px;}

@@ -8,9 +8,6 @@
     /*jslint css: true*/
     body{
         color: white;
-        /* background-color: #000; */
-        /* background-image: url('room.jpg'); */
-        /* background-size: cover; */
 		background:
 			radial-gradient(black 15%, transparent 16%) 0 0,
 			radial-gradient(black 15%, transparent 16%) 8px 8px,
@@ -20,15 +17,15 @@
 			background-size:16px 16px;       
     }
     td.title{
-        color: #eccba4;
+        color: #BCE8FF;
     }
     .search{
-        color: #eccba4;
+        color: #BCE8FF;
         font-size: 14pt;
         font-weight: bold;
     }
     .lowvoltagegenerator-title{
-        color: #eccba4;
+        color: #BCE8FF;
         font-size: 20pt;
         font-weight: bold;
     }
@@ -47,9 +44,9 @@
         padding: 20px;
     }
     #innerdiv {
-        border: 1px solid #ab6a30;
+        border: 1px solid lightblue;
         padding: 20px;
-        background-color: #3a1c00;
+        background-color: #334452;
         border-radius: 10px;
         margin-top: 15px;
     }
@@ -82,12 +79,12 @@
 		document.location = document.location.pathname + '?txtInput=' + $("#txtInput").val();
 	}
 
-	var btnRedBull = '<form action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_s-xclick"><input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHNwYJKoZIhvcNAQcEoIIHKDCCByQCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYBJGjvgc814jjkb2M70lLme9ltfmlVZZonlkOY31vC5IKq662IW/lGTkhbodO9mfIdLH/BLVpZVubSjO6QXM7JeTw+L7zar+JQrxMOoFn2cRi1n9wB8TFPgqqIbbSWYxuFb5IfUWHqEJuumBykYhEBKL4fnmTRaHIP05f+saIfjhzELMAkGBSsOAwIaBQAwgbQGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQI7OcDRX9PAVyAgZDYkhF3w83fg6+rxfrFbJVGHL42mGLAwh8JRPDwZaoRwrcGVYGsihKI9xa7VOK1PTUEnZ3dqwsyb/iFak6AaLEXkvc41YWUj9608ogfRDWQKxtyZWwI9anPn1UKER+30z4NRr1B4BpQNweN/ppDqjXSCJlWI2x31Xd0FXyY1Sa9ABs4bW++MRlGcDnyfJB9+Y6gggOHMIIDgzCCAuygAwIBAgIBADANBgkqhkiG9w0BAQUFADCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wHhcNMDQwMjEzMTAxMzE1WhcNMzUwMjEzMTAxMzE1WjCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMFHTt38RMxLXJyO2SmS+Ndl72T7oKJ4u4uw+6awntALWh03PewmIJuzbALScsTS4sZoS1fKciBGoh11gIfHzylvkdNe/hJl66/RGqrj5rFb08sAABNTzDTiqqNpJeBsYs/c2aiGozptX2RlnBktH+SUNpAajW724Nv2Wvhif6sFAgMBAAGjge4wgeswHQYDVR0OBBYEFJaffLvGbxe9WT9S1wob7BDWZJRrMIG7BgNVHSMEgbMwgbCAFJaffLvGbxe9WT9S1wob7BDWZJRroYGUpIGRMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbYIBADAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA4GBAIFfOlaagFrl71+jq6OKidbWFSE+Q4FqROvdgIONth+8kSK//Y/4ihuE4Ymvzn5ceE3S/iBSQQMjyvb+s2TWbQYDwcp129OPIbD9epdr4tJOUNiSojw7BHwYRiPh58S1xGlFgHFXwrEBb3dgNbMUa+u4qectsMAXpVHnD9wIyfmHMYIBmjCCAZYCAQEwgZQwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tAgEAMAkGBSsOAwIaBQCgXTAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0xMzAxMTYyMzQ2MjZaMCMGCSqGSIb3DQEJBDEWBBRNZk7vfEWeurubIgKDJcunE3mDEDANBgkqhkiG9w0BAQEFAASBgHgFooc23z0tIHJzaVBJZBVkf5YV4AHZUns/XQ+goQ2ZMfOt60tvKJuLHy1aYZUSMPn6lRR6jQqHQpuAlebzpVUrQr5k8nJ5ok9QJPRK3826fE1SpYfjhVYpRglDFBLBA6Fo14FXMVSdmpYKCVXN8Iq/fzlLV4SXqhEavmn6PMov-----END PKCS7-----">	<div class="btn-group">	  <a class="btn btn-inverse" href="mailto:jparkerweb@gmail.com" target="email">	    <i class="icon-envelope"></i> contact	  </a>	  <a class="btn btn-inverse	" href="https://github.com/jparkerweb/Low_Voltage_Generator" target="github">	    <i class="icon-github"></i> github	  </a>	  <button class="btn btn-inverse" name="submit" alt="PayPal">	    <i class="icon-usd"></i>	    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"> donate</button>	</div></form>';
+	var btnRedBull = '<form action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_s-xclick"><input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">	<div class="btn-group" style="font-weight:normal;">	  <a class="btn btn-inverse" href="mailto:jparkerweb@gmail.com" target="email">	    <i class="icon-envelope"></i> contact	  </a>	  <a class="btn btn-inverse	" href="https://github.com/jparkerweb/Low_Voltage_Generator" target="github">	    <i class="icon-github"></i> github	  </a>	  <button class="btn btn-inverse" name="submit" alt="PayPal">	    <i class="icon-usd"></i>	    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"> donate</button>	</div></form>';
 
 	if (getURLVars('txtInput') !== '') {
-	    window.document.write("<div id='outerdiv' align='center'><span class='lowvoltagegenerator lowvoltagegenerator-title'>Low Voltage Generator <div class='sprite-icons-lowvoltage lowvoltagegenerator-icon'></div><span><div id='innerdiv'>Links for: <span class='search'>" + getURLVars('txtInput') + "<span><br ><br ><div id='divLinks'><div><br ><div><div class='input-append'><input class='span2' id='txtInput' name='txtInput' type='text'><button class='btn btn-inverse' type='button' onClick='javascript:getLinks();'>Gen Links</button><br><br>"+ btnRedBull +"</div><div><br ><div><div><br >");
+	    window.document.write("<div id='outerdiv' align='center'><span class='lowvoltagegenerator lowvoltagegenerator-title'>Low Voltage Generator <div class='sprite-icons-lowvoltage2 lowvoltagegenerator-icon'></div><span><div id='innerdiv'>Links for: <span class='search'>" + getURLVars('txtInput') + "<span><br ><br ><div id='divLinks'><div><br ><div><div class='input-append'><input class='span2' id='txtInput' name='txtInput' type='text'><button class='btn btn-inverse' type='button' onClick='javascript:getLinks();'>Gen Links</button><br><br>"+ btnRedBull +"</div><div><br ><div><div><br >");
 	} else {
-	    window.document.write("<div id='outerdiv' align='center'><span class='lowvoltagegenerator lowvoltagegenerator-title'>Low Voltage Generator <div class='sprite-icons-lowvoltage lowvoltagegenerator-icon'></div><span><div id='innerdiv'><div><div class='input-append'><input class='span2' id='txtInput' name='txtInput' type='text'><button class='btn btn-inverse' type='button' onClick='javascript:getLinks();'>Gen Links</button></div><div><br ><div><div><br >");
+	    window.document.write("<div id='outerdiv' align='center'><span class='lowvoltagegenerator lowvoltagegenerator-title'>Low Voltage Generator <div class='sprite-icons-lowvoltage2 lowvoltagegenerator-icon'></div><span><div id='innerdiv'><div><div class='input-append'><input class='span2' id='txtInput' name='txtInput' type='text'><button class='btn btn-inverse' type='button' onClick='javascript:getLinks();'>Gen Links</button></div><div><br ><div><div><br >");
 	}
 
 
