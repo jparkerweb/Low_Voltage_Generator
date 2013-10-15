@@ -1,4 +1,4 @@
-/* glue: 0.3 hash: f7c897bc3c */
+/* glue: 0.3 hash: d05961c0b7 */
 .sprite-icons-lowvoltage2,
 .sprite-icons-lowvoltage,
 .sprite-icons-xdccme,
@@ -37,6 +37,7 @@
 .sprite-icons-dognzb,
 .sprite-icons-btdigg,
 .sprite-icons-bitsnoop,
+.sprite-icons-binsearch,
 .sprite-icons-1337x,
 .sprite-icons-excursionscript,
 .sprite-icons-email_edit,
@@ -79,7 +80,8 @@
 .sprite-icons-dognzb{background-position:-202px -152px;width:26px;height:26px;}
 .sprite-icons-btdigg{background-position:-2px -192px;width:26px;height:26px;}
 .sprite-icons-bitsnoop{background-position:-32px -192px;width:26px;height:26px;}
-.sprite-icons-1337x{background-position:-62px -192px;width:26px;height:26px;}
-.sprite-icons-excursionscript{background-position:-92px -192px;width:18px;height:18px;}
-.sprite-icons-email_edit{background-position:-114px -192px;width:18px;height:18px;}
+.sprite-icons-binsearch{background-position:-62px -192px;width:26px;height:26px;}
+.sprite-icons-1337x{background-position:-92px -192px;width:26px;height:26px;}
+.sprite-icons-excursionscript{background-position:-122px -192px;width:18px;height:18px;}
+.sprite-icons-email_edit{background-position:-144px -192px;width:18px;height:18px;}
 .sprite-icons-p{background-position:-202px -182px;width:3px;height:3px;}
