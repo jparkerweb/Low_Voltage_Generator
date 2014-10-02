@@ -126,7 +126,7 @@ $(document).ready(function () {
 		KickAssTorrents = " <a target='_blank' title='KickAssTorrents' href='http://kickass.to/usearch/" + tSearchString + "/'> <div class='sprite-icons-kickasstorrents'></div><a> ";
 		ThePirateBay = " <a target='_blank' title='ThePirateBay' href='http://thepiratebay.se/search/" + tSearchString + "'> <div class='sprite-icons-thepiratebay'></div><a> ";
 		ExtraTorrent = " <a target='_blank' title='ExtraTorrent' href='http://extratorrent.com/search/?search=" + tSearchStringPlus + "'> <div class='sprite-icons-extratorrent'></div><a> ";
-		ISOHunt = " <a target='_blank' title='ISOHunt' href='http://isohunt.com/torrents/?ihq=" + tSearchStringPlus + "'> <div class='sprite-icons-isohunt'></div><a> ";
+		ISOHunt = " <a target='_blank' title='ISOHunt' href='http://isohunt.to/torrents/?ihq=" + tSearchStringPlus + "'> <div class='sprite-icons-isohunt'></div><a> ";
 		BitSnoop = " <a target='_blank' title='BitSnoop' href='http://bitsnoop.com/search/all/" + tSearchStringPlus + "'> <div class='sprite-icons-bitsnoop'></div><a> ";
 		l337x = " <a target='_blank' title='1337x' href='http://1337x.org/search/" + tSearchStringPlus + "/0/'> <div class='sprite-icons-1337x'></div><a> ";
 		h33t = " <a target='_blank' title='h33t' href='http://h33t.to/search/" + tSearchStringPlus + "'> <div class='sprite-icons-h33t'></div><a> ";

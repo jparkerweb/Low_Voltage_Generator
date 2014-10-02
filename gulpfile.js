@@ -63,11 +63,11 @@ gulp.task('sass', function () {
 	}
 
 	gulp.src(sourcePaths.CSS)
-		.pipe(rubySass()).on('error', notify.onError({message: 'sass error: <%= error %>'}))
+		.pipe(rubySass({ style: 'expanded', 'sourcemap=none': true })).on('error', notify.onError({message: 'sass error: <%= error %>'}))
 		.pipe(autoprefixer('last 2 version', 'ie 9', 'ie 8'))
 		.pipe(gulpif(doMinify, csso()))
 		.pipe(gulp.dest(destPaths.CSS))
-		.pipe(notify({onLast: true, message: sassCompleteMessage}))
+		//.pipe(notify({onLast: true, message: sassCompleteMessage}))
 		.pipe(browserSync.reload({stream:true}));
 
 	//gulp.src(destPaths.CSS + '*.css')

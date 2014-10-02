@@ -5,15 +5,15 @@
   "devDependencies": {
     "browser-sync": "^1.1.2",
     "gulp": "^3.8.5",
-    "gulp-autoprefixer": "0.0.8",
+    "gulp-autoprefixer": "^1.0.1",
     "gulp-clean": "^0.3.1",
     "gulp-concat": "^2.2.0",
     "gulp-csso": "^0.2.9",
     "gulp-if": "^1.2.1",
     "gulp-notify": "^1.4.0",
-    "gulp-ruby-sass": "^0.5.0",
-    "gulp-sprite-glue": "0.0.1",
-    "gulp-uglify": "^0.3.1",
+    "gulp-ruby-sass": "^0.7.1",
+    "gulp-sprite-glue": "0.0.2",
+    "gulp-uglify": "^1.0.1",
     "yargs": "^1.2.6"
   }
 }
