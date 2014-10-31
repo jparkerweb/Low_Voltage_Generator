@@ -10,6 +10,43 @@ body{
 	font-weight: 400;
 	font-size: 16px;
 }
+%button {
+	box-shadow: none;
+	background: #F0F0F0;
+	border: 1px solid #DDD;
+	padding: 6px;
+	border-radius: 2px;
+	margin: 0 5px;
+	cursor: pointer;
+	vertical-align: middle;
+	&:hover {
+		background: #F9F9F9;
+	}
+}
+button, 
+{
+	@extend %button;
+}
+.abtn,
+a.btn {
+	box-shadow: none;
+	border: 1px solid rgba(0, 0, 0, 0);
+	padding: 6px;
+	border-radius: 2px;
+	cursor: pointer;
+	vertical-align: middle;
+	font-size: 11px;
+	text-decoration: none;
+	font-weight: 400;
+	margin: 0 2px;
+	background: none;
+	color: #DDD;
+	&:hover {
+		border: 1px solid #ddd;
+		background: none;
+	}
+}
+
 .results-table {
 	a > div {
 		display: inline-block;
@@ -55,5 +92,13 @@ td.title{
 	#txtInput {
 		height: 30px !important;
 		width: 178px;
+		border-radius: 2px;
+		box-shadow: none;
+		position: relative;
+		vertical-align: middle;
 	}	
+}
+
+.footer-actions {
+	margin: 20px;
 }

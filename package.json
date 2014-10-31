@@ -10,9 +10,9 @@
     "gulp-concat": "^2.2.0",
     "gulp-csso": "^0.2.9",
     "gulp-if": "^1.2.1",
-    "gulp-notify": "^1.4.0",
+    "gulp-notify": "^2.0.0",
     "gulp-ruby-sass": "^0.7.1",
-    "gulp-sprite-glue": "0.0.2",
+    "gulp-sprite-glue": "0.0.3",
     "gulp-uglify": "^1.0.1",
     "yargs": "^1.2.6"
   }

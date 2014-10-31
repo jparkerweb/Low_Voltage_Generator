@@ -63,21 +63,21 @@ gulp.task('sass', function () {
 	}
 
 	gulp.src(sourcePaths.CSS)
-		.pipe(rubySass({ style: 'expanded', 'sourcemap=none': true })).on('error', notify.onError({message: 'sass error: <%= error %>'}))
-		.pipe(autoprefixer('last 2 version', 'ie 9', 'ie 8'))
+		// this hack forces rubysass to not return source maps
+		.pipe(rubySass({ style: 'expanded', 'sourcemap=none': true }))
+			.on('error', notify.onError({message: 'sass error: <%= error %>'}))
+		.pipe(autoprefixer({browsers: ['last 4 versions']}))
 		.pipe(gulpif(doMinify, csso()))
 		.pipe(gulp.dest(destPaths.CSS))
-		//.pipe(notify({onLast: true, message: sassCompleteMessage}))
+		.pipe(notify({onLast: true, message: sassCompleteMessage}))
 		.pipe(browserSync.reload({stream:true}));
-
-	//gulp.src(destPaths.CSS + '*.css')
-	//    .pipe(concat('lowvoltage.css'))
 });
 
 
 // task: Concatenate & Minify JS
 gulp.task('scripts', function() {
 	gulp.src([
+			sourcePaths.JSBase + '/jquery-1.11.1.min.js',
 			sourcePaths.JSBase + '/main.js',
 			sourcePaths.JSBase + '/ga.js',
 			sourcePaths.JS
@@ -97,7 +97,7 @@ gulp.task('watch', function () {
 });
 
 
-// task: Default, Clean, Compile, Watch.
+// task: Default, Clean, Compile, Watch. (pass in optional --minify flag)
 gulp.task('default', ['clean'], function () {
 	if (!doMinify) gulp.start('watch');
 	gulp.start('sass', 'scripts');
