@@ -42,7 +42,9 @@ $(document).ready(function () {
 	});
 	
 	var tSearchString,
-		tSearchStringPlus;
+		tSearchStringPlus,
+		tSearchStringShowNameOnlyPlus;
+
 		tSearchString = '';
 		tSearchString = getURLVars('txtInput');
 		tSearchString = tSearchString.replace(/ /g, ' ');
@@ -50,6 +52,10 @@ $(document).ready(function () {
 		tSearchString = tSearchString.replace(/_/g, ' ');
 		tSearchString = tSearchString.replace(/-/g, ' ');
 		tSearchString = tSearchString.replace(/'/g, '%27');
+
+		tSearchStringShowNameOnlyPlus = tSearchString.replace(/[se]{1}[0-9]{2}/gi, '');
+		tSearchStringShowNameOnlyPlus = tSearchStringShowNameOnlyPlus.replace(/^\s+|\s+$/gm,'');
+		tSearchStringShowNameOnlyPlus = tSearchStringShowNameOnlyPlus.replace(/ /g, '+');
 
 		tSearchStringPlus = tSearchString.replace(/ /g, '+');
 		tSearchString = tSearchString.replace(/ /g, '%20');
@@ -78,26 +84,20 @@ $(document).ready(function () {
 		DogNZB = " <a target='_blank' title='DogNZB' href='http://dognzb.cr/search/" + tSearchString + "'> <div class='sprite-icons-dognzb'></div><a> ";
 		NZBClub = " <a target='_blank' title='NZBClub' href='http://www.nzbclub.com/search.aspx?q=" + tSearchStringPlus + "'> <div class='sprite-icons-nzbclub'></div><a> ";
 		FindNzb = " <a target='_blank' title='FindNzb' href='http://findnzb.net/?q=" + tSearchStringPlus + "'> <div class='sprite-icons-findnzb'></div><a> ";
-		NZBGeek = " <a target='_blank' title='NZBGeek' href='https://index.nzbgeek.info/search/" + tSearchString + "'> <div class='sprite-icons-nzbgeek'></div><a> ";
+		NZBGeek = " <a target='_blank' title='NZBGeek' href='https://nzbgeek.info/geekseek.php?browseincludewords=" + tSearchString + "'> <div class='sprite-icons-nzbgeek'></div><a> ";
 		NzbAG = " <a target='_blank' title='NzbAG' href='https://nzb.ag/search/" + tSearchString + "'> <div class='sprite-icons-nzbag'></div><a> ";
 		GingaDADDY = " <a target='_blank' title='GingaDADDY' href='https://www.gingadaddy.com/nzbbrowse.php?b=2&st=1&k=" + tSearchStringPlus + "&c=0&g=0&sr=1&o=0'> <div class='sprite-icons-gingadaddy'></div><a> ";
 
 		
 	//newznab public
 	var OZNzb,
-		NewzB,
 		NzbSu,
-		NZBZombie,
 		Nzbs2go,
-		FreeNzb,
 		NzbIndexIn;
 
 		OZNzb = " <a target='_blank' title='OZNzb' href='https://www.oznzb.com/search/" + tSearchString + "'> <div class='sprite-icons-oznzb'></div><a> ";
-		NewzB = " <a target='_blank' title='NewzB' href='http://newzb.net/search/" + tSearchString + "'> <div class='sprite-icons-newzb'></div><a> ";
 		NzbSu = " <a target='_blank' title='NzbSu' href='https://nzb.su/search/" + tSearchString + "'> <div class='sprite-icons-nzbsu'></div><a> ";
-		NZBZombie = " <a target='_blank' title='NZBZombie' href='https://www.nzbzombie.com/search/" + tSearchString + "'> <div class='sprite-icons-nzbzombie'></div><a> ";
 		Nzbs2go = " <a target='_blank' title='Nzbs2go' href='http://www.nzbs4u.net/search/" + tSearchString + "'> <div class='sprite-icons-nzbs2go'></div><a> ";
-		FreeNzb = " <a target='_blank' title='FreeNzb' href='http://freenzb.com/search/" + tSearchString + "'> <div class='sprite-icons-freenzb'></div><a> ";
 		NzbIndexIn = " <a target='_blank' title='NzbIndexIn' href='http://nzbindex.in/search/" + tSearchString + "'> <div class='sprite-icons-nzbindexin'></div><a> ";
 			
 			
@@ -109,7 +109,8 @@ $(document).ready(function () {
 		EzTv = " <a target='_blank' title='EZTV' href='http://eztv.it/'> <div class='sprite-icons-eztv'></div><a> ";
 			
 	//Bit Torrent Links
-	var BTDigg,
+	var Popcorn,
+		BTDigg,
 		NewTorrents,
 		KickAssTorrents,
 		ThePirateBay,
@@ -121,6 +122,7 @@ $(document).ready(function () {
 		TorrentzEu,
 		fenopy;
 
+		Popcorn = " <a target='_blank' title='Popcorn' href='http://popcorn.cab/search?query=" + tSearchStringShowNameOnlyPlus + "'> <div class='sprite-icons-popcorn'></div><a> ";
 		BTDigg = " <a target='_blank' title='BTDigg' href='http://btdigg.org/search?q=" + tSearchStringPlus + "'> <div class='sprite-icons-btdigg'></div><a> ";
 		NewTorrents = " <a target='_blank' title='NewTorrents' href='http://www.newtorrents.info/search/" + tSearchString + "'> <div class='sprite-icons-newtorrents'></div><a> ";
 		KickAssTorrents = " <a target='_blank' title='KickAssTorrents' href='http://kickass.to/usearch/" + tSearchString + "/'> <div class='sprite-icons-kickasstorrents'></div><a> ";
@@ -141,26 +143,28 @@ $(document).ready(function () {
 
 		ExcursionScript = " <a target='_blank' title='Excursion Script' href='https://www.dropbox.com/s/nxiorybg930gcm8/excursion9.5.install.exe'> <div class='sprite-icons-excursionscript'></div><a> ";
 		XDCCMe = " <a target='_blank' title='XDCCMe' href='http://www.xdcc.me/search.php?Description=" + tSearchStringPlus + "'> <div class='sprite-icons-xdccme'></div><a> ";
-		XDCCFinder = " <a target='_blank' title='XDCCFinder' href='http://www.xdccfinder.com/results.php?kw=" + tSearchString + "'> <div class='sprite-icons-xdccfinder'></div><a> ";
+		XDCCFinder = " <a target='_blank' title='XDCCFinder' href='http://xdccfinder.net/index.php?Description=" + tSearchStringPlus + "'> <div class='sprite-icons-xdccfinder'></div><a> ";
 		SunXDCC = " <a target='_blank' title='SunXDCC' href='http://sunxdcc.com/?sterm=" + tSearchStringPlus + "'> <div class='sprite-icons-sunxdcc'></div><a> ";
 	
 	//File Lockers
 	var FilesTube;
 
-	FilesTube = " <a target='_blank' title='FilesTube' href='http://www.filestube.com/search.html?q=" + tSearchStringPlus + "'> <div class='sprite-icons-filestube'></div><a> ";
+	FilesTube = " <a target='_blank' title='FilesTube' href='http://www.filestube.to/search/" + tSearchStringPlus + "'> <div class='sprite-icons-filestube'></div><a> ";
 
 	//PreDBs
 	var PreDbMe,
 		OrlyDB,
-		VCDQ;
+		VCDQ,
+		NfoHump;
 
 		PreDbMe = " <a target='_blank' title='PreDBMe' href='http://predb.me/?search=" + tSearchStringPlus + "'> <div class='sprite-icons-predbme'></div><a> ";
 		OrlyDB = " <a target='_blank' title='OrlyDB' href='http://www.orlydb.com/?q=" + tSearchStringPlus + "'> <div class='sprite-icons-orlydb'></div><a> ";
 		VCDQ = " <a target='_blank' title='VCDQ' href='http://www.vcdq.com/browse/1/0/3_2/10_9_21_22_23_24_6_28_32_19_11_3_2/0/2011_2012_2013/0/" + tSearchString + "/0/0/0'> <div class='sprite-icons-vcdq'></div><a> ";
+		NfoHump = " <a target='_blank' title='VCDQ' href='http://www.nfohump.com/'> <div class='sprite-icons-nfohump'></div><a> ";
 			
 	//add new html content to page
 	$("#divLinks").attr('nowrap', 'nowrap');
-	$("#divLinks").append('<table class="results-table" border="0"><tr><td class="title">nzb...<td><td>' + NZBsDotOrg + DogNZB + NzbAG + GingaDADDY + NZBIndex + NZBKing + Binsearch + NzbFinder + OMGWTFNZBz + NZBClub + FindNzb + NZBGeek + '<td><tr>' + '<tr><td class="title">newznab...<td><td>' + NzbSu +  OZNzb + NewzB + NzbIndexIn + NZBZombie + Nzbs2go + FreeNzb + '<td><tr>' + '<tr><td class="title">torrent:.<td><td>' + BTDigg + NewTorrents + KickAssTorrents + ThePirateBay + ExtraTorrent + ISOHunt + BitSnoop + l337x + h33t + TorrentzEu + fenopy + '<td><tr>' + '<tr><td class="title">other...<td><td>' + NzbRss + EzTv + '<td><tr>' + '<tr><td class="title">xdcc...' + ExcursionScript + '<td><td>' + XDCCMe + XDCCFinder + SunXDCC + '<td><tr>' + '<tr><td class="title">file.lockers...<td><td>' + FilesTube + '<td><tr>' + '<tr><td class="title">infos...<td><td>' + PreDbMe + OrlyDB + VCDQ + '<td><tr>' + '</table>');
+	$("#divLinks").append('<table class="results-table" border="0"><tr><td class="title">nzb...<td><td>' + NZBsDotOrg + DogNZB + NzbAG + GingaDADDY + NZBIndex + NZBKing + Binsearch + NzbFinder + OMGWTFNZBz + NZBClub + FindNzb + NZBGeek + '<td><tr>' + '<tr><td class="title">newznab...<td><td>' + NzbSu +  OZNzb + NzbIndexIn + Nzbs2go + '<td><tr>' + '<tr><td class="title">torrent:.<td><td>' + Popcorn + BTDigg + NewTorrents + KickAssTorrents + ThePirateBay + ExtraTorrent + ISOHunt + BitSnoop + l337x + h33t + TorrentzEu + fenopy + '<td><tr>' + '<tr><td class="title">other...<td><td>' + NzbRss + EzTv + '<td><tr>' + '<tr><td class="title">xdcc...' + ExcursionScript + '<td><td>' + XDCCMe + XDCCFinder + SunXDCC + '<td><tr>' + '<tr><td class="title">file.lockers...<td><td>' + FilesTube + '<td><tr>' + '<tr><td class="title">infos...<td><td>' + PreDbMe + OrlyDB + VCDQ + NfoHump + '<td><tr>' + '</table>');
 
 
 	$("#outerdiv").append(buttonGroup);
