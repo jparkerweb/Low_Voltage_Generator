@@ -4,7 +4,7 @@ Low Voltage Generator is a simple html page that uses javascript to generate lin
 
 Demo / Public Site
 ------------------
-<a href="http://dl.dropboxusercontent.com/u/2569529/webpages/low_voltage_generator/lowvoltagegenerator.html" target="_blank">Public Site: Low Voltage Generator</a>
+<a href="http://jparkerweb.github.io/Low_Voltage_Generator/" target="_blank">Public Site: Low Voltage Generator</a>
 
 Installation
 ------------
