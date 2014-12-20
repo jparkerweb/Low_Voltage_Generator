@@ -1,5 +1,5 @@
 // Include Gulp
-var gulp = require('gulp'); 
+var gulp = require('gulp');
 
 // Include Our Plugins
 var gulpif = require('gulp-if');
@@ -45,7 +45,7 @@ gulp.task('browser-sync', function() {
 
 // task: Clean our Build Paths
 // the stream is "return" to force it to be async (gulp will wait for clean to finish)
-gulp.task('clean', function () {  
+gulp.task('clean', function () {
 	return gulp.src([
 			destPaths.CSS + "/**/*.css",
 			destPaths.JS + "/**/*.js"
