@@ -114,26 +114,26 @@ $(document).ready(function () {
 		NewTorrents,
 		KickAssTorrents,
 		ThePirateBay,
+		OldPirateBay,
 		ExtraTorrent,
 		ISOHunt,
 		BitSnoop,
 		l337x,
 		h33t,
-		TorrentzEu,
-		fenopy;
+		TorrentzEu;
 
 		Popcorn = " <a target='_blank' title='Popcorn' href='http://popcorn.cab/search?query=" + tSearchStringShowNameOnlyPlus + "'> <div class='sprite-icons-popcorn'></div><a> ";
 		BTDigg = " <a target='_blank' title='BTDigg' href='http://btdigg.org/search?q=" + tSearchStringPlus + "'> <div class='sprite-icons-btdigg'></div><a> ";
 		NewTorrents = " <a target='_blank' title='NewTorrents' href='http://www.newtorrents.info/search/" + tSearchString + "'> <div class='sprite-icons-newtorrents'></div><a> ";
 		KickAssTorrents = " <a target='_blank' title='KickAssTorrents' href='http://kickass.to/usearch/" + tSearchString + "/'> <div class='sprite-icons-kickasstorrents'></div><a> ";
 		ThePirateBay = " <a target='_blank' title='ThePirateBay' href='http://thepiratebay.se/search/" + tSearchString + "'> <div class='sprite-icons-thepiratebay'></div><a> ";
+		OldPirateBay = " <a target='_blank' title='OldPirateBay' href='https://oldpiratebay.org/search.php?q=" + tSearchStringPlus + "'> <div class='sprite-icons-oldpiratebay'></div><a> ";
 		ExtraTorrent = " <a target='_blank' title='ExtraTorrent' href='http://extratorrent.com/search/?search=" + tSearchStringPlus + "'> <div class='sprite-icons-extratorrent'></div><a> ";
 		ISOHunt = " <a target='_blank' title='ISOHunt' href='http://isohunt.to/torrents/?ihq=" + tSearchStringPlus + "'> <div class='sprite-icons-isohunt'></div><a> ";
 		BitSnoop = " <a target='_blank' title='BitSnoop' href='http://bitsnoop.com/search/all/" + tSearchStringPlus + "'> <div class='sprite-icons-bitsnoop'></div><a> ";
 		l337x = " <a target='_blank' title='1337x' href='http://1337x.org/search/" + tSearchStringPlus + "/0/'> <div class='sprite-icons-1337x'></div><a> ";
 		h33t = " <a target='_blank' title='h33t' href='http://h33t.to/search/" + tSearchStringPlus + "'> <div class='sprite-icons-h33t'></div><a> ";
 		TorrentzEu = " <a target='_blank' title='TorrentzEu' href='http://torrentz.eu/search?f=" + tSearchStringPlus + "'> <div class='sprite-icons-torrentzeu'></div><a> ";
-		fenopy = " <a target='_blank' title='fenopy' href='http://fenopy.se/?keyword=" + tSearchStringPlus + "'> <div class='sprite-icons-fenopy'></div><a> ";
 
 	//XDCC Search
 	var ExcursionScript,
@@ -159,7 +159,7 @@ $(document).ready(function () {
 
 	//add new html content to page
 	$("#divLinks").attr('nowrap', 'nowrap');
-	$("#divLinks").append('<table class="results-table" border="0"><tr><td class="title">nzb...<td><td>' + NZBsDotOrg + DogNZB + NzbAG + GingaDADDY + NZBIndex + NZBKing + Binsearch + NzbFinder + OMGWTFNZBz + NZBClub + FindNzb + NZBGeek + '<td><tr>' + '<tr><td class="title">newznab...<td><td>' + NzbSu +  OZNzb + NzbIndexIn + Nzbs2go + '<td><tr>' + '<tr><td class="title">torrent:.<td><td>' + Popcorn + BTDigg + NewTorrents + KickAssTorrents + ThePirateBay + ExtraTorrent + ISOHunt + BitSnoop + l337x + h33t + TorrentzEu + fenopy + '<td><tr>' + '<tr><td class="title">other...<td><td>' + NzbRss + EzTv + '<td><tr>' + '<tr><td class="title">xdcc...' + ExcursionScript + '<td><td>' + XDCCMe + XDCCFinder + SunXDCC + '<td><tr>' + '<tr><td class="title">infos...<td><td>' + PreDbMe + OrlyDB + VCDQ + NfoHump + '<td><tr>' + '</table>');
+	$("#divLinks").append('<table class="results-table" border="0"><tr><td class="title">nzb...<td><td>' + NZBsDotOrg + DogNZB + NzbAG + GingaDADDY + NZBIndex + NZBKing + Binsearch + NzbFinder + OMGWTFNZBz + NZBClub + FindNzb + NZBGeek + '<td><tr>' + '<tr><td class="title">newznab...<td><td>' + NzbSu +  OZNzb + NzbIndexIn + Nzbs2go + '<td><tr>' + '<tr><td class="title">torrent:.<td><td>' + Popcorn + BTDigg + NewTorrents + KickAssTorrents + ThePirateBay + OldPirateBay + ExtraTorrent + ISOHunt + BitSnoop + l337x + h33t + TorrentzEu + '<td><tr>' + '<tr><td class="title">other...<td><td>' + NzbRss + EzTv + '<td><tr>' + '<tr><td class="title">xdcc...' + ExcursionScript + '<td><td>' + XDCCMe + XDCCFinder + SunXDCC + '<td><tr>' + '<tr><td class="title">infos...<td><td>' + PreDbMe + OrlyDB + VCDQ + NfoHump + '<td><tr>' + '</table>');
 
 
 	$("#outerdiv").append(buttonGroup);

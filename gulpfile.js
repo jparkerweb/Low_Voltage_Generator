@@ -32,18 +32,29 @@ var destPaths = {
 };
 
 
-// Proxy to existing vhost
-gulp.task('browser-sync', function() {
-	browserSync.init(null, {
-		server: {
-			baseDir: "./",
-			index: "lowvoltagegenerator.html"
-		}
+// ==========================================
+// ===           Static server            ===
+// ==========================================
+	// setup our browser-sync server
+	gulp.task('browser-sync', function() {
+		browserSync.init(null, {
+			server: {
+				baseDir: "./",
+				index: "lowvoltagegenerator.html"
+			}
+		});
 	});
-});
+	// reload
+	gulp.task('reload', function () {
+		console.log('browser-sync reload');
+		browserSync.reload();
+	});
+// ==========================================
 
 
-// task: Clean our Build Paths
+// =================================
+// == task: Clean our Build Paths ==
+// =================================
 // the stream is "return" to force it to be async (gulp will wait for clean to finish)
 gulp.task('clean', function () {
 	return gulp.src([
@@ -52,9 +63,12 @@ gulp.task('clean', function () {
 		], {read: false})
 		.pipe(clean({force: true}));
 });
+// =================================
 
 
-// task: Compile SASS to CSS, AutoPrefix, and Minify
+// =======================================================
+// == task: Compile SASS to CSS, AutoPrefix, and Minify ==
+// =======================================================
 gulp.task('sass', function () {
 	// set sass complete message
 	var sassCompleteMessage = "SASS Complete";
@@ -72,9 +86,12 @@ gulp.task('sass', function () {
 		.pipe(notify({onLast: true, message: sassCompleteMessage}))
 		.pipe(browserSync.reload({stream:true}));
 });
+// =======================================================
 
 
-// task: Concatenate & Minify JS
+// ===================================
+// == task: Concatenate & Minify JS ==
+// ===================================
 gulp.task('scripts', function() {
 	gulp.src([
 			sourcePaths.JSBase + '/jquery-1.11.1.min.js',
@@ -88,12 +105,14 @@ gulp.task('scripts', function() {
 
 	browserSync.reload();
 });
+// ===================================
 
 
 // task: Watch Directories/Files for Change
 gulp.task('watch', function () {
 	gulp.watch(sourcePaths.CSS, ['sass']);
 	gulp.watch(sourcePaths.JS, ['scripts']);
+	gulp.start('browser-sync');
 });
 
 
