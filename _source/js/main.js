@@ -93,12 +93,20 @@ $(document).ready(function () {
 	var OZNzb,
 		NzbSu,
 		Nzbs2go,
-		NzbIndexIn;
+		NzbIndexIn,
+		NzbPlanet,
+		NzbNdx,
+		Dusky,
+		HomeOfNzb;
 
 		OZNzb = " <a target='_blank' title='OZNzb' href='https://www.oznzb.com/search/" + tSearchString + "'> <div class='sprite-icons-oznzb'></div><a> ";
 		NzbSu = " <a target='_blank' title='NzbSu' href='https://nzb.su/search/" + tSearchString + "'> <div class='sprite-icons-nzbsu'></div><a> ";
 		Nzbs2go = " <a target='_blank' title='Nzbs2go' href='http://www.nzbs4u.net/search/" + tSearchString + "'> <div class='sprite-icons-nzbs2go'></div><a> ";
 		NzbIndexIn = " <a target='_blank' title='NzbIndexIn' href='http://nzbindex.in/search/" + tSearchString + "'> <div class='sprite-icons-nzbindexin'></div><a> ";
+		NzbPlanet = " <a target='_blank' title='NzbPlanet' href='https://nzbplanet.net/search/" + tSearchStringPlus + "'> <div class='sprite-icons-nzbplanet'></div><a> ";
+		NzbNdx = " <a target='_blank' title='NzbNdx' href='http://www.nzbndx.com/search/" + tSearchString + "'> <div class='sprite-icons-nzbndx'></div><a> ";
+		Dusky = " <a target='_blank' title='Dusky' href='https://dusky.deepcave.net/search/" + tSearchString + "'> <div class='sprite-icons-dusky'></div><a> ";
+		HomeOfNzb = " <a target='_blank' title='HomeOfNzb' href='http://homeofnzb.com/search/" + tSearchString + "'> <div class='sprite-icons-homeofnzb'></div><a> ";
 
 
 	//Other Links (no search param passed)
@@ -110,7 +118,7 @@ $(document).ready(function () {
 
 	//Bit Torrent Links
 	var Popcorn,
-		BTDigg,
+		TorrentProject,
 		NewTorrents,
 		KickAssTorrents,
 		ThePirateBay,
@@ -123,7 +131,7 @@ $(document).ready(function () {
 		TorrentzEu;
 
 		Popcorn = " <a target='_blank' title='Popcorn' href='http://popcorn.cab/search?query=" + tSearchStringShowNameOnlyPlus + "'> <div class='sprite-icons-popcorn'></div><a> ";
-		BTDigg = " <a target='_blank' title='BTDigg' href='http://btdigg.org/search?q=" + tSearchStringPlus + "'> <div class='sprite-icons-btdigg'></div><a> ";
+		TorrentProject = " <a target='_blank' title='TorrentProject' href='http://torrentproject.se/?s=" + tSearchStringPlus + "'> <div class='sprite-icons-torrentproject'></div><a> ";
 		NewTorrents = " <a target='_blank' title='NewTorrents' href='http://www.newtorrents.info/search/" + tSearchString + "'> <div class='sprite-icons-newtorrents'></div><a> ";
 		KickAssTorrents = " <a target='_blank' title='KickAssTorrents' href='http://kickass.to/usearch/" + tSearchString + "/'> <div class='sprite-icons-kickasstorrents'></div><a> ";
 		ThePirateBay = " <a target='_blank' title='ThePirateBay' href='http://thepiratebay.se/search/" + tSearchString + "'> <div class='sprite-icons-thepiratebay'></div><a> ";
@@ -159,7 +167,7 @@ $(document).ready(function () {
 
 	//add new html content to page
 	$("#divLinks").attr('nowrap', 'nowrap');
-	$("#divLinks").append('<table class="results-table" border="0"><tr><td class="title">nzb...<td><td>' + NZBsDotOrg + DogNZB + NzbAG + GingaDADDY + NZBIndex + NZBKing + Binsearch + NzbFinder + OMGWTFNZBz + NZBClub + FindNzb + NZBGeek + '<td><tr>' + '<tr><td class="title">newznab...<td><td>' + NzbSu +  OZNzb + NzbIndexIn + Nzbs2go + '<td><tr>' + '<tr><td class="title">torrent:.<td><td>' + Popcorn + BTDigg + NewTorrents + KickAssTorrents + ThePirateBay + OldPirateBay + ExtraTorrent + ISOHunt + BitSnoop + l337x + h33t + TorrentzEu + '<td><tr>' + '<tr><td class="title">other...<td><td>' + NzbRss + EzTv + '<td><tr>' + '<tr><td class="title">xdcc...' + ExcursionScript + '<td><td>' + XDCCMe + XDCCFinder + SunXDCC + '<td><tr>' + '<tr><td class="title">infos...<td><td>' + PreDbMe + OrlyDB + VCDQ + NfoHump + '<td><tr>' + '</table>');
+	$("#divLinks").append('<table class="results-table" border="0"><tr><td class="title">nzb...<td><td>' + NZBsDotOrg + DogNZB + NzbAG + GingaDADDY + NZBIndex + NZBKing + Binsearch + NzbFinder + OMGWTFNZBz + NZBClub + FindNzb + NZBGeek + '<td><tr>' + '<tr><td class="title">newznab...<td><td>' + NzbSu +  OZNzb + NzbIndexIn + Nzbs2go + NzbPlanet + NzbNdx + Dusky + HomeOfNzb + '<td><tr>' + '<tr><td class="title">torrent:.<td><td>' + Popcorn + TorrentProject + NewTorrents + KickAssTorrents + ThePirateBay + OldPirateBay + ExtraTorrent + ISOHunt + BitSnoop + l337x + h33t + TorrentzEu + '<td><tr>' + '<tr><td class="title">other...<td><td>' + NzbRss + EzTv + '<td><tr>' + '<tr><td class="title">xdcc...' + ExcursionScript + '<td><td>' + XDCCMe + XDCCFinder + SunXDCC + '<td><tr>' + '<tr><td class="title">infos...<td><td>' + PreDbMe + OrlyDB + VCDQ + NfoHump + '<td><tr>' + '</table>');
 
 
 	$("#outerdiv").append(buttonGroup);
