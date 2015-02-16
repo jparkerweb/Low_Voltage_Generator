@@ -23,7 +23,7 @@ body{
 		background: #F9F9F9;
 	}
 }
-button, 
+button,
 {
 	@extend %button;
 }
@@ -77,10 +77,10 @@ td.title{
 	position:absolute;
 	top: 23%;
 	left: 50%;
-	width:34em;
+	width:37em;
 	height:19em;
 	margin-top: -9em; /*set to a negative number 1/2 of your height*/
-	margin-left: -17em; /*set to a negative number 1/2 of your width*/
+	margin-left: -20em; /*set to a negative number 1/2 of your width*/
 	padding: 20px;
 	#innerdiv {
 		border: 1px solid #777;
@@ -96,7 +96,7 @@ td.title{
 		box-shadow: none;
 		position: relative;
 		vertical-align: middle;
-	}	
+	}
 }
 
 .footer-actions {
