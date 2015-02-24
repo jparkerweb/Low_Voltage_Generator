@@ -1,4 +1,4 @@
-﻿/* glue: 0.9.4 hash: b9c8468ade */
+﻿/* glue: 0.9.4 hash: 3fe999582b */
         .sprite-icons-lowvoltage2,
 .sprite-icons-lowvoltage,
 .sprite-icons-nzbking,
@@ -42,6 +42,7 @@
 .sprite-icons-extratorrent,
 .sprite-icons-dusky,
 .sprite-icons-dognzb,
+.sprite-icons-btdigg,
 .sprite-icons-bitsnoop,
 .sprite-icons-binsearch,
 .sprite-icons-1337x,
@@ -309,32 +310,38 @@
             height: 26px;
         }
         
-        .sprite-icons-bitsnoop {
+        .sprite-icons-btdigg {
             background-position: -232px -2px;
             width: 26px;
             height: 26px;
         }
         
-        .sprite-icons-binsearch {
+        .sprite-icons-bitsnoop {
             background-position: -232px -32px;
             width: 26px;
             height: 26px;
         }
         
-        .sprite-icons-1337x {
+        .sprite-icons-binsearch {
             background-position: -232px -62px;
             width: 26px;
             height: 26px;
         }
         
-        .sprite-icons-excursionscript {
+        .sprite-icons-1337x {
             background-position: -232px -92px;
+            width: 26px;
+            height: 26px;
+        }
+        
+        .sprite-icons-excursionscript {
+            background-position: -232px -122px;
             width: 18px;
             height: 18px;
         }
         
         .sprite-icons-p {
-            background-position: -254px -92px;
+            background-position: -254px -122px;
             width: 3px;
             height: 3px;
         }
@@ -383,6 +390,7 @@
     .sprite-icons-extratorrent,
     .sprite-icons-dusky,
     .sprite-icons-dognzb,
+    .sprite-icons-btdigg,
     .sprite-icons-bitsnoop,
     .sprite-icons-binsearch,
     .sprite-icons-1337x,

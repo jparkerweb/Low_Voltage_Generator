@@ -37,7 +37,7 @@ var destPaths = {
 // ==========================================
 	// setup our browser-sync server
 	gulp.task('browser-sync', function() {
-		browserSync.init(null, {
+		browserSync({
 			server: {
 				baseDir: "./",
 				index: "lowvoltagegenerator.html"
