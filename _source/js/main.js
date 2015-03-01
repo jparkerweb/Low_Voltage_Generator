@@ -220,5 +220,7 @@ function drawPage() {
 	$("body").append(markup);
 
 	//focus textbox
-	$("#txtInput").focus();
+	$("#txtInput")
+		.select()
+		.focus();
 }

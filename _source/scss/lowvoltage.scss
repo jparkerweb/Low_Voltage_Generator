@@ -56,6 +56,11 @@ header {
 		&:active {
 			outline: 0;
 		}
+
+		&::selection {
+			color: white;
+			background: #3ECCCD;
+		}
 	}
 	.search__button {
 		border: 1px solid;
