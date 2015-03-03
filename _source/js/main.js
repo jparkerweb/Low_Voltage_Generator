@@ -1,16 +1,32 @@
 
 $(document).ready(function () {
+	$("body").on("click", "#btnGenerate", function() {
+		getLinks();
+	});
+
+	drawPage();
+
+
+	var $txtInput = $("#txtInput");
+
 	// listen for enter key and button click
 	$(document).keypress(function (e) {
 		if (e.keyCode === 13) {
 			getLinks();
 		}
 	});
-	$("body").on("click", "#btnGenerate", function() {
-		getLinks();
+
+	// listen for clear button
+	$("body").on("click", "#clearSearch", function() {
+		$txtInput
+			.val("")
+			.focus();
 	});
 
-	drawPage();
+	//focus textbox
+	$txtInput
+		.select()
+		.focus();
 });
 
 
@@ -207,6 +223,7 @@ function drawPage() {
 	markup += "  </header>";
 	markup += "  <div class='search'>";
 	markup += "    <input placeholder='what are you looking for...' type='text' name='txtInput' id='txtInput' class='search__text-box' value='" + txtInput + "' />";
+	markup += "    <span id='clearSearch' class='search__clear'></span>";
 	markup += "    <button type='button' id='btnGenerate' class='search__button'>Generate</button>";
 	markup += "  </div>";
 
@@ -218,9 +235,4 @@ function drawPage() {
 	markup += "</div>";
 
 	$("body").append(markup);
-
-	//focus textbox
-	$("#txtInput")
-		.select()
-		.focus();
 }

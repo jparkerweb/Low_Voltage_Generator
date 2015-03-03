@@ -43,6 +43,7 @@ header {
 
 	.search__text-box {
 		width: 300px;
+		padding-right: 22px;
 		background: transparent;
 		box-shadow: none;
 		border: 0;
@@ -62,15 +63,41 @@ header {
 			background: #3ECCCD;
 		}
 	}
+
+	.search__clear {
+		position: relative;
+		left: -36px;
+		padding: 0 3px;
+		margin: 0;
+		line-height: 1;
+		display: inline-block;
+		border-radius: 50%;
+		color: #3ECCCD;
+		font-weight: 600;
+
+		&:before {
+			content: '\00d7';
+		}
+
+		&:hover {
+			background: #3ECCCD;
+			color: #131E9B;
+			cursor: pointer;
+		}
+	}
+
 	.search__button {
 		border: 1px solid;
 		background: transparent;
 		border-radius: 3px;
 		padding: 0 15px;
 		line-height: 2;
+		color: #3ECCCD;
 
 		&:hover {
-			color: white;
+			background: #3ECCCD;
+			color: #131E9B;
+			border-color: #3ECCCD;
 		}
 	}
 }
