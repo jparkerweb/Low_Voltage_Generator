@@ -6,8 +6,8 @@ $(document).ready(function () {
 
 	drawPage();
 
-
 	var $txtInput = $("#txtInput");
+
 
 	// listen for enter key and button click
 	$(document).keypress(function (e) {
@@ -20,14 +20,30 @@ $(document).ready(function () {
 	$("body").on("click", "#clearSearch", function() {
 		$txtInput
 			.val("")
-			.focus();
+			.focus()
+			.trigger("change");
 	});
 
-	//focus textbox
+	// listener for show/hide of clear button
+	$("body").on("change keyup", $txtInput, function() {
+		console.log("input: " + $txtInput.val());
+		showHideClearButton();
+	});
+
+	// select and focus textbox
 	$txtInput
 		.select()
 		.focus();
+
+	// set initial state of clear button
+	showHideClearButton();
 });
+
+
+function showHideClearButton() {
+	var showHide = $("#txtInput").val() === "";
+	$("#clearSearch").toggleClass("not-visible", showHide);
+}
 
 
 function getURLVars(key_str) {
