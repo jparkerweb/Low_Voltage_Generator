@@ -144,6 +144,9 @@ function getResults() {
 
 	//Bit Torrent Links
 	var ListTorrent,
+		Strike,
+		Popcorn,
+		BTDigg,
 		MetaSearch,
 		TorrentProject,
 		TorrentBox,
@@ -158,6 +161,7 @@ function getResults() {
 		h33t,
 		TorrentzEu;
 
+		Strike = " <a target='_blank' title='Strike' href='https://getstrike.net/torrents/?q=" + tSearchStringPlus + "'> <i class='sprite-icons-strike'></i></a> ";
 		Popcorn = " <a target='_blank' title='Popcorn' href='http://popcorn.cab/search?query=" + tSearchStringShowNameOnlyPlus + "'> <i class='sprite-icons-popcorn'></i></a> ";
 		BTDigg = " <a target='_blank' title='BTDigg' href='http://btdigg.org/search?info_hash=&q=" + tSearchStringPlus + "'> <i class='sprite-icons-btdigg'></i></a> ";
 		MetaSearch = " <a target='_blank' title='MetaSearch' href='http://metasearch.torrentproject.com/#!search=" + tSearchStringPlus + "'> <i class='sprite-icons-metasearch'></i></a> ";
@@ -173,7 +177,7 @@ function getResults() {
 		l337x = " <a target='_blank' title='1337x' href='http://1337x.org/search/" + tSearchStringPlus + "/0/'> <i class='sprite-icons-1337x'></i></a> ";
 		h33t = " <a target='_blank' title='h33t' href='http://h33t.to/search/" + tSearchStringPlus + "'> <i class='sprite-icons-h33t'></i></a> ";
 		TorrentzEu = " <a target='_blank' title='TorrentzEu' href='http://torrentz.eu/search?f=" + tSearchStringPlus + "'> <i class='sprite-icons-torrentzeu'></i></a> ";
-		ListTorrent = Popcorn + BTDigg + MetaSearch + TorrentProject + TorrentBox + NewTorrents + KickAssTorrents + ThePirateBay + OldPirateBay + ExtraTorrent + ISOHunt + BitSnoop + l337x + h33t + TorrentzEu;
+		ListTorrent = Strike + Popcorn + BTDigg + MetaSearch + TorrentProject + TorrentBox + NewTorrents + KickAssTorrents + ThePirateBay + OldPirateBay + ExtraTorrent + ISOHunt + BitSnoop + l337x + h33t + TorrentzEu;
 
 	//XDCC Search
 	var ListXDCC,

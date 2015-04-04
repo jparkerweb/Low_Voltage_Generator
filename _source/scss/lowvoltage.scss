@@ -113,15 +113,29 @@ header {
 
 	.results__row {
 		padding: 10px 0;
+		clear: both;
+		border-bottom: 1px solid rgba(255,255,255,0.1);
+		overflow: hidden;
+		padding-bottom: 15px;
+		margin-bottom: 10px;
 
 		.row__title {
 			display: inline-block;
 			width: 85px;
+			margin-top: 3px;
+			vertical-align: top;
 		}
 
 		.row__icons {
 			display: inline-block;
 			position: relative;
+			float: right;
+			max-width: 500px;
+			text-align: right;
+
+			a {
+				margin: 3px 1px;
+			}
 
 			i {
 				vertical-align: middle;
