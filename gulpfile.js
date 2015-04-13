@@ -41,7 +41,8 @@ var destPaths = {
 			server: {
 				baseDir: "./",
 				index: "lowvoltagegenerator.html"
-			}
+			},
+			ghostMode: false //do not mirror clicks, scroll, and forms on all connected browsers by default
 		});
 	});
 	// reload
@@ -84,7 +85,7 @@ gulp.task('sass', function () {
 		.pipe(gulpif(doMinify, csso()))
 		.pipe(gulp.dest(destPaths.CSS))
 		.pipe(notify({onLast: true, message: sassCompleteMessage}))
-		.pipe(browserSync.reload({stream:true}));
+		.pipe(browserSync.stream());
 });
 // =======================================================
 
