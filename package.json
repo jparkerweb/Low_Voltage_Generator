@@ -1,9 +1,9 @@
 {
   "name": "low_voltage_generator",
-  "version": "0.1.0",
+  "version": "1.2.0",
   "description": "Low Voltage Generator\r =====================\r Low Voltage Generator is a simple html page that uses javascript to generate links to commonly used \"scene\" search engines.  The various links generated are grouped into sections (e.g., nzb, newznab, torrent, xdcc, predb, etc.).  Each link will open the respective search page in a new window and pass in your searched for term (e.g., Dexter s07e11).  This makes life easier :)  This should save you time, as you can use Low Voltage Generator as your jumping off point, without having to visit each search site and search for your content seperatly.",
   "devDependencies": {
-    "browser-sync": "^2.2.1",
+    "browser-sync": "^2.6.4",
     "gulp": "^3.8.11",
     "gulp-autoprefixer": "^2.0.0",
     "gulp-clean": "^0.3.1",
@@ -14,6 +14,6 @@
     "gulp-ruby-sass": "^0.7.1",
     "gulp-sprite-glue": "0.0.5",
     "gulp-uglify": "^1.0.1",
-    "yargs": "^3.4.5"
+    "yargs": "^3.7.2"
   }
 }

@@ -199,6 +199,13 @@ function getResults() {
 		NfoHump = " <a target='_blank' title='VCDQ' href='http://www.nfohump.com/'> <i class='sprite-icons-nfohump'></i></a> ";
 		ListPreDBs = PreDbMe + OrlyDB + VCDQ + NfoHump;
 
+	//PreDBs
+	var ListMP3,
+		MP3skull;
+
+		MP3skull = " <a target='_blank' title='MP3skull' href='https://mp3skull.to/mp3/" + tSearchStringPlus + ".html'> <i class='sprite-icons-mp3skull'></i></a> ";
+		ListMP3 = MP3skull;
+
 	var results = "";
 	results += "  <div class='results'>";
 	results += "    <div class='results__row'>";
@@ -224,6 +231,10 @@ function getResults() {
 	results += "    <div class='results__row'>";
 	results += "      <div class='row__title'>DBs</div>";
 	results += "      <div class='row__icons' id='dbsIcons'>" + ListPreDBs + "</div>";
+	results += "    </div>";
+	results += "    <div class='results__row'>";
+	results += "      <div class='row__title'>MP3s</div>";
+	results += "      <div class='row__icons' id='mp3Icons'>" + ListMP3 + "</div>";
 	results += "    </div>";
 	results += "  </div>";
 
