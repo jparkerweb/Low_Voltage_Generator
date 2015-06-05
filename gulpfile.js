@@ -60,6 +60,7 @@ var destPaths = {
 gulp.task('clean', function () {
 	return gulp.src([
 			destPaths.CSS + "/**/*.css",
+			destPaths.CSS + "/**/*.css.map",
 			destPaths.JS + "/**/*.js"
 		], {read: false})
 		.pipe(clean({force: true}));
@@ -77,15 +78,18 @@ gulp.task('sass', function () {
 		sassCompleteMessage = sassCompleteMessage + " : MINIFIED";
 	}
 
-	gulp.src(sourcePaths.CSS)
-		// this hack forces rubysass to not return source maps
-		.pipe(rubySass({ style: 'expanded', 'sourcemap=none': true }))
-			.on('error', notify.onError({message: 'sass error: <%= error %>'}))
-		.pipe(autoprefixer({browsers: ['last 4 versions']}))
+	var config = {
+		style: 'expanded',
+		sourcemap: false
+	};
+
+	return rubySass(sourcePaths.CSSBase, config)
+		.on("error", notify.onError({ title: "Sass Error" }))
+		.pipe(autoprefixer({browsers: ['last 4 versions', 'Firefox >= 27', 'Blackberry >= 7', 'IE >= 9']}))
 		.pipe(gulpif(doMinify, csso()))
 		.pipe(gulp.dest(destPaths.CSS))
-		.pipe(notify({onLast: true, message: sassCompleteMessage}))
-		.pipe(browserSync.stream());
+		.pipe(browserSync.stream())
+		.pipe(notify({ title: "Sass", message: sassCompleteMessage, onLast: true }));
 });
 // =======================================================
 

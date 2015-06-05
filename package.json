@@ -11,8 +11,8 @@
     "gulp-csso": "^1.0.0",
     "gulp-if": "^1.2.1",
     "gulp-notify": "^2.0.0",
-    "gulp-ruby-sass": "^0.7.1",
-    "gulp-sprite-glue": "0.0.5",
+    "gulp-ruby-sass": "^1.0.5",
+    "gulp-sprite-glue": "^0.1.0",
     "gulp-uglify": "^1.0.1",
     "yargs": "^3.7.2"
   }
