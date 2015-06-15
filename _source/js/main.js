@@ -199,7 +199,15 @@ function getResults() {
 		NfoHump = " <a target='_blank' title='VCDQ' href='http://www.nfohump.com/'> <i class='sprite-icons-nfohump'></i></a> ";
 		ListPreDBs = PreDbMe + OrlyDB + VCDQ + NfoHump;
 
-	//PreDBs
+	//AudioBooks
+	var ListAudioBooks,
+		AudioBookBay;
+
+		AudioBookBay = " <a target='_blank' title='AudioBookBay' href='http://audiobookbay.co/?s=" + tSearchStringPlus + "'> <i class='sprite-icons-audiobookbay'></i></a> ";
+		AudioBookVault = " <a target='_blank' title='AudioBookVault' href='http://www.audiobookvault.ws/?s=" + tSearchStringPlus + "'> <i class='sprite-icons-audiobookvault'></i></a> ";
+		ListAudioBooks = AudioBookBay + AudioBookVault;
+
+	//MP3s
 	var ListMP3,
 		MP3skull;
 
@@ -210,31 +218,35 @@ function getResults() {
 	results += "  <div class='results'>";
 	results += "    <div class='results__row'>";
 	results += "      <div class='row__title'>NZB</div>";
-	results += "      <div class='row__icons' id='nzbIcons'>" + ListNzb + "</div>";
+	results += "      <div class='row__icons'>" + ListNzb + "</div>";
 	results += "    </div>";
 	results += "    <div class='results__row'>";
 	results += "      <div class='row__title'>Newznab</div>";
-	results += "      <div class='row__icons' id='newznabIcons'>" + ListNewznab + "</div>";
+	results += "      <div class='row__icons'>" + ListNewznab + "</div>";
 	results += "    </div>";
 	results += "    <div class='results__row'>";
 	results += "      <div class='row__title'>Torrent</div>";
-	results += "      <div class='row__icons' id='torrentIcons'>" + ListTorrent + "</div>";
-	results += "    </div>";
-	results += "    <div class='results__row'>";
-	results += "      <div class='row__title'>Other</div>";
-	results += "      <div class='row__icons' id='otherIcons'>" + ListOther + "</div>";
-	results += "    </div>";
-	results += "    <div class='results__row'>";
-	results += "      <div class='row__title'>XDCC</div>";
-	results += "      <div class='row__icons' id='xdccIcons'>" + ListXDCC + "</div>";
+	results += "      <div class='row__icons'>" + ListTorrent + "</div>";
 	results += "    </div>";
 	results += "    <div class='results__row'>";
 	results += "      <div class='row__title'>DBs</div>";
-	results += "      <div class='row__icons' id='dbsIcons'>" + ListPreDBs + "</div>";
+	results += "      <div class='row__icons'>" + ListPreDBs + "</div>";
+	results += "    </div>";
+	results += "    <div class='results__row'>";
+	results += "      <div class='row__title'>Audio Books</div>";
+	results += "      <div class='row__icons'>" + ListAudioBooks + "</div>";
 	results += "    </div>";
 	results += "    <div class='results__row'>";
 	results += "      <div class='row__title'>MP3s</div>";
-	results += "      <div class='row__icons' id='mp3Icons'>" + ListMP3 + "</div>";
+	results += "      <div class='row__icons'>" + ListMP3 + "</div>";
+	results += "    </div>";
+	results += "    <div class='results__row'>";
+	results += "      <div class='row__title'>Other</div>";
+	results += "      <div class='row__icons'>" + ListOther + "</div>";
+	results += "    </div>";
+	results += "    <div class='results__row'>";
+	results += "      <div class='row__title'>XDCC</div>";
+	results += "      <div class='row__icons'>" + ListXDCC + "</div>";
 	results += "    </div>";
 	results += "  </div>";
 

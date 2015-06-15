@@ -121,7 +121,7 @@ header {
 
 		.row__title {
 			display: inline-block;
-			width: 85px;
+			width: 110px;
 			margin-top: 3px;
 			vertical-align: top;
 		}
@@ -134,7 +134,12 @@ header {
 			text-align: right;
 
 			a {
-				margin: 3px 1px;
+				overflow: auto;
+				display: inline-block;
+
+				&:hover {
+					background: #2ecc71;
+				}
 			}
 
 			i {
