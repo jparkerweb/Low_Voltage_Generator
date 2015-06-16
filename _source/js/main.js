@@ -188,6 +188,23 @@ function getResults() {
 		SunXDCC = " <a target='_blank' title='SunXDCC' href='http://sunxdcc.com/?sterm=" + tSearchStringPlus + "'> <i class='sprite-icons-sunxdcc'></i></a> ";
 		ListXDCC = ExcursionScript + XDCCMe + SunXDCC;
 
+	//AudioBooks
+	var ListAudioBooks,
+		AudioBookBay;
+
+		AudioBookBay = " <a target='_blank' title='AudioBookBay' href='http://audiobookbay.co/?s=" + tSearchStringPlus + "'> <i class='sprite-icons-audiobookbay'></i></a> ";
+		AudioBookVault = " <a target='_blank' title='AudioBookVault' href='http://www.audiobookvault.ws/?s=" + tSearchStringPlus + "'> <i class='sprite-icons-audiobookvault'></i></a> ";
+		ListAudioBooks = AudioBookBay + AudioBookVault;
+		// add btdigg to the list
+		ListAudioBooks += BTDigg;
+
+	//MP3s
+	var ListMP3,
+		MP3skull;
+
+		MP3skull = " <a target='_blank' title='MP3skull' href='https://mp3skull.to/mp3/" + tSearchStringPlus + ".html'> <i class='sprite-icons-mp3skull'></i></a> ";
+		ListMP3 = MP3skull;
+
 	//PreDBs
 	var ListPreDBs,
 		VCDQ,
@@ -198,21 +215,6 @@ function getResults() {
 		VCDQ = " <a target='_blank' title='VCDQ' href='http://www.vcdq.com/browse/1/0/3_2/10_9_21_22_23_24_6_28_32_19_11_3_2/0/2011_2012_2013/0/" + tSearchString + "/0/0/0'> <i class='sprite-icons-vcdq'></i></a> ";
 		NfoHump = " <a target='_blank' title='VCDQ' href='http://www.nfohump.com/'> <i class='sprite-icons-nfohump'></i></a> ";
 		ListPreDBs = PreDbMe + OrlyDB + VCDQ + NfoHump;
-
-	//AudioBooks
-	var ListAudioBooks,
-		AudioBookBay;
-
-		AudioBookBay = " <a target='_blank' title='AudioBookBay' href='http://audiobookbay.co/?s=" + tSearchStringPlus + "'> <i class='sprite-icons-audiobookbay'></i></a> ";
-		AudioBookVault = " <a target='_blank' title='AudioBookVault' href='http://www.audiobookvault.ws/?s=" + tSearchStringPlus + "'> <i class='sprite-icons-audiobookvault'></i></a> ";
-		ListAudioBooks = AudioBookBay + AudioBookVault;
-
-	//MP3s
-	var ListMP3,
-		MP3skull;
-
-		MP3skull = " <a target='_blank' title='MP3skull' href='https://mp3skull.to/mp3/" + tSearchStringPlus + ".html'> <i class='sprite-icons-mp3skull'></i></a> ";
-		ListMP3 = MP3skull;
 
 	var results = "";
 	results += "  <div class='results'>";
@@ -229,12 +231,12 @@ function getResults() {
 	results += "      <div class='row__icons'>" + ListTorrent + "</div>";
 	results += "    </div>";
 	results += "    <div class='results__row'>";
-	results += "      <div class='row__title'>DBs</div>";
-	results += "      <div class='row__icons'>" + ListPreDBs + "</div>";
-	results += "    </div>";
-	results += "    <div class='results__row'>";
 	results += "      <div class='row__title'>Audio Books</div>";
 	results += "      <div class='row__icons'>" + ListAudioBooks + "</div>";
+	results += "    </div>";
+	results += "    <div class='results__row'>";
+	results += "      <div class='row__title'>DBs</div>";
+	results += "      <div class='row__icons'>" + ListPreDBs + "</div>";
 	results += "    </div>";
 	results += "    <div class='results__row'>";
 	results += "      <div class='row__title'>MP3s</div>";
