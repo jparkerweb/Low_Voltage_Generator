@@ -198,6 +198,21 @@ function getResults() {
 		// add btdigg to the list
 		ListAudioBooks += BTDigg;
 
+	//Books / Journals
+	var ListBooks,
+		Libgen,
+		BookFi,
+		SciEng,
+		BookZZ,
+		eBooksWTF;
+
+		Libgen = " <a target='_blank' title='Libgen' href='http://gen.lib.rus.ec/search.php?req="+ tSearchStringPlus + "&lg_topic=libgen&open=0&view=simple&phrase=1&column=def'> <i class='sprite-icons-book1'></i></a> ";
+		BookFi = " <a target='_blank' title='BookFi' href='http://en.bookfi.org/s/?q=" + tSearchStringPlus + "&t=0'> <i class='sprite-icons-book2'></i></a> ";
+		SciEng = " <a target='_blank' title='SciEng' href='http://scienceengineering.library.scilibgen.org/search.php?button=" + tSearchStringPlus + "&submit=Dig+for&search_type=magic'> <i class='sprite-icons-book3'></i></a> ";
+		BookZZ = " <a target='_blank' title='BookZZ' href='http://bookzz.org/s/?q=" + tSearchStringPlus + "&t=0'> <i class='sprite-icons-book4'></i></a> ";
+		eBooksWTF = " <a target='_blank' title='eBooksWTF' href='https://ebooks.wtf/?q=" + tSearchStringPlus + "'> <i class='sprite-icons-book5'></i></a> ";
+		ListBooks = Libgen + BookFi + SciEng + BookZZ + eBooksWTF;
+
 	//MP3s
 	var ListMP3,
 		MP3skull;
@@ -233,6 +248,10 @@ function getResults() {
 	results += "    <div class='results__row'>";
 	results += "      <div class='row__title'>Audio Books</div>";
 	results += "      <div class='row__icons'>" + ListAudioBooks + "</div>";
+	results += "    </div>";
+	results += "    <div class='results__row'>";
+	results += "      <div class='row__title'>Books</div>";
+	results += "      <div class='row__icons'>" + ListBooks + "</div>";
 	results += "    </div>";
 	results += "    <div class='results__row'>";
 	results += "      <div class='row__title'>DBs</div>";

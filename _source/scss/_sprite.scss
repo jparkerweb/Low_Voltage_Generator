@@ -1,4 +1,4 @@
-﻿/* glue: 0.9.4 hash: db7b0943c5 */
+﻿/* glue: 0.9.4 hash: 6720fa7b59 */
         .sprite-icons-lowvoltage2,
 .sprite-icons-lowvoltage,
 .sprite-icons-nzbking,
@@ -44,6 +44,13 @@
 .sprite-icons-dusky,
 .sprite-icons-dognzb,
 .sprite-icons-btdigg,
+.sprite-icons-book7,
+.sprite-icons-book6,
+.sprite-icons-book5,
+.sprite-icons-book4,
+.sprite-icons-book3,
+.sprite-icons-book2,
+.sprite-icons-book1,
 .sprite-icons-bitsnoop,
 .sprite-icons-binsearch,
 .sprite-icons-audiobookvault,
@@ -325,38 +332,80 @@
             height: 26px;
         }
         
-        .sprite-icons-bitsnoop {
+        .sprite-icons-book7 {
             background-position: -232px -62px;
             width: 26px;
             height: 26px;
         }
         
-        .sprite-icons-binsearch {
+        .sprite-icons-book6 {
             background-position: -232px -92px;
             width: 26px;
             height: 26px;
         }
         
-        .sprite-icons-audiobookvault {
+        .sprite-icons-book5 {
             background-position: -232px -122px;
             width: 26px;
             height: 26px;
         }
         
-        .sprite-icons-audiobookbay {
+        .sprite-icons-book4 {
             background-position: -232px -152px;
             width: 26px;
             height: 26px;
         }
         
-        .sprite-icons-1337x {
+        .sprite-icons-book3 {
             background-position: -232px -182px;
             width: 26px;
             height: 26px;
         }
         
-        .sprite-icons-excursionscript {
+        .sprite-icons-book2 {
             background-position: -2px -223px;
+            width: 26px;
+            height: 26px;
+        }
+        
+        .sprite-icons-book1 {
+            background-position: -32px -223px;
+            width: 26px;
+            height: 26px;
+        }
+        
+        .sprite-icons-bitsnoop {
+            background-position: -62px -223px;
+            width: 26px;
+            height: 26px;
+        }
+        
+        .sprite-icons-binsearch {
+            background-position: -92px -223px;
+            width: 26px;
+            height: 26px;
+        }
+        
+        .sprite-icons-audiobookvault {
+            background-position: -122px -223px;
+            width: 26px;
+            height: 26px;
+        }
+        
+        .sprite-icons-audiobookbay {
+            background-position: -152px -223px;
+            width: 26px;
+            height: 26px;
+        }
+        
+        .sprite-icons-1337x {
+            background-position: -182px -223px;
+            width: 26px;
+            height: 26px;
+        }
+        
+        .sprite-icons-excursionscript {
+            background-position: -212px -223px;
             width: 18px;
             height: 18px;
         }
@@ -413,6 +462,13 @@
     .sprite-icons-dusky,
     .sprite-icons-dognzb,
     .sprite-icons-btdigg,
+    .sprite-icons-book7,
+    .sprite-icons-book6,
+    .sprite-icons-book5,
+    .sprite-icons-book4,
+    .sprite-icons-book3,
+    .sprite-icons-book2,
+    .sprite-icons-book1,
     .sprite-icons-bitsnoop,
     .sprite-icons-binsearch,
     .sprite-icons-audiobookvault,
@@ -421,9 +477,9 @@
     .sprite-icons-excursionscript,
     .sprite-icons-p {
                 background-image: url('../img/icons.png');
-                -webkit-background-size: 260px 243px;
-                -moz-background-size: 260px 243px;
-                background-size: 260px 243px;
+                -webkit-background-size: 260px 251px;
+                -moz-background-size: 260px 251px;
+                background-size: 260px 251px;
             }
         }
         
