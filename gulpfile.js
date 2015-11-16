@@ -2,16 +2,16 @@
 var gulp = require('gulp');
 
 // Include Our Plugins
-var gulpif = require('gulp-if');
-var clean = require('gulp-clean');
-var rubySass = require('gulp-ruby-sass');
-var csso = require('gulp-csso');
-var autoprefixer = require('gulp-autoprefixer');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
-var notify = require('gulp-notify');
-var browserSync = require('browser-sync');
-var args = require('yargs').argv;
+var gulpif = require('gulp-if'),
+	clean = require('gulp-clean'),
+	sass = require('gulp-sass'),
+	csso = require('gulp-csso'),
+	autoprefixer = require('gulp-autoprefixer'),
+	concat = require('gulp-concat'),
+	uglify = require('gulp-uglify'),
+	notify = require('gulp-notify'),
+	browserSync = require('browser-sync'),
+	args = require('yargs').argv;
 
 // gather command line args
 var doMinify = args.minify;
@@ -83,8 +83,10 @@ gulp.task('sass', function () {
 		sourcemap: false
 	};
 
-	return rubySass(sourcePaths.CSSBase, config)
-		.on("error", notify.onError({ title: "Sass Error" }))
+
+	// -- new sass compiler -- uses libsass/gulp-sass/node-sass --
+	return gulp.src(sourcePaths.CSSBase + '/**/*.scss', config)
+		.pipe(sass().on('error', notify.onError({ title: "Sass Error" })))
 		.pipe(autoprefixer({browsers: ['last 4 versions', 'Firefox >= 27', 'Blackberry >= 7', 'IE >= 9']}))
 		.pipe(gulpif(doMinify, csso()))
 		.pipe(gulp.dest(destPaths.CSS))

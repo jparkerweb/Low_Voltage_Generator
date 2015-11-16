@@ -1,3 +1,5 @@
+// scss-lint:disable SelectorDepth
+
 // imports
 @import 'normalize';
 @import 'fonts';
@@ -11,7 +13,7 @@ body {
 	font-weight: 400;
 	font-size: 18px;
 	color: #b1c2c6;
-	background: -webkit-linear-gradient(90deg, rgb(34, 175, 175) 0%, rgb(19, 28, 154) 100%) rgb(255, 255, 255);
+	background: linear-gradient(90deg, rgb(34, 175, 175) 0%, rgb(19, 28, 154) 100%) rgb(255, 255, 255);
 }
 
 i {
@@ -32,6 +34,7 @@ header {
 		font-size: 42px;
 		font-weight: 300;
 	}
+
 	.title-icon {
 		vertical-align: middle;
 	}
@@ -64,7 +67,7 @@ header {
 		}
 
 		&::selection {
-			color: white;
+			color: #FFF;
 			background: #3ECCCD;
 		}
 	}
@@ -114,7 +117,7 @@ header {
 	.results__row {
 		padding: 10px 0;
 		clear: both;
-		border-bottom: 1px solid rgba(255,255,255,0.1);
+		border-bottom: 1px solid rgba(255, 255, 255, .1);
 		overflow: hidden;
 		padding-bottom: 15px;
 		margin-bottom: 10px;
@@ -204,4 +207,9 @@ footer {
 
 
 
-.h{position:absolute;right:-364px;top:8px;opacity:0;}
+.h {
+	position: absolute;
+	right: -364px;
+	top: 8px;
+	opacity: 0;
+}
