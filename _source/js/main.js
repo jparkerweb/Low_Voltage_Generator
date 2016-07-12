@@ -93,98 +93,64 @@ function getResults() {
 
 	//nzb
 	var ListNzb,
-		NZBKing,
-		Binsearch,
-		NzbFinder,
-		OMGWTFNZBz,
-		DogNZB,
-		NZBClub,
-		FindNzb,
-		NZBGeek,
-		GingaDADDY;
-
-		NZBsDotOrg = " <a target='_blank' title='NZBsDotOrg' href='http://nzbs.org/search/" + tSearchString + "'> <i class='sprite-icons-nzbsdotorg'></i></a> ";
-		NZBIndex = " <a target='_blank' title='NZBIndex' href='http://www.nzbindex.nl/search/?q=" + tSearchStringPlus + "'> <i class='sprite-icons-nzbindex'></i></a> ";
-		NZBKing = " <a target='_blank' title='NZBKing' href='http://www.nzbking.com/search/?q=\"" + tSearchStringPlus + "\"'> <i class='sprite-icons-nzbking'></i></a> ";
-		Binsearch = " <a target='_blank' title='Binsearch' href='http://www.binsearch.info/?q=" + tSearchStringPlus + "&max=100&adv_age=1100'> <i class='sprite-icons-binsearch'></i></a> ";
-		NzbFinder = " <a target='_blank' title='NzbFinder' href='https://www.nzbfinder.ws/search/" + tSearchString + "'> <i class='sprite-icons-nzbfinder'></i></a> ";
-		OMGWTFNZBz = " <a target='_blank' title='OMGWTFNZBs' href='http://omgwtfnzbs.org/browse.php?search=" + tSearchStringPlus + "&amp;cat=default&amp;sort=1&amp;type=1'> <i class='sprite-icons-omg'></i></a> ";
-		DogNZB = " <a target='_blank' title='DogNZB' href='http://dognzb.cr/search/" + tSearchString + "'> <i class='sprite-icons-dognzb'></i></a> ";
-		NZBClub = " <a target='_blank' title='NZBClub' href='http://www.nzbclub.com/search.aspx?q=" + tSearchStringPlus + "'> <i class='sprite-icons-nzbclub'></i></a> ";
-		FindNzb = " <a target='_blank' title='FindNzb' href='http://findnzb.net/?q=" + tSearchStringPlus + "'> <i class='sprite-icons-findnzb'></i></a> ";
-		NZBGeek = " <a target='_blank' title='NZBGeek' href='https://nzbgeek.info/geekseek.php?browseincludewords=" + tSearchString + "'> <i class='sprite-icons-nzbgeek'></i></a> ";
+		NZBsDotOrg = " <a target='_blank' title='NZBsDotOrg' href='http://nzbs.org/search/" + tSearchString + "'> <i class='sprite-icons-nzbsdotorg'></i></a> ",
+		NZBIndex = " <a target='_blank' title='NZBIndex' href='http://www.nzbindex.nl/search/?q=" + tSearchStringPlus + "'> <i class='sprite-icons-nzbindex'></i></a> ",
+		NZBKing = " <a target='_blank' title='NZBKing' href='http://www.nzbking.com/search/?q=\"" + tSearchStringPlus + "\"'> <i class='sprite-icons-nzbking'></i></a> ",
+		Binsearch = " <a target='_blank' title='Binsearch' href='http://www.binsearch.info/?q=" + tSearchStringPlus + "&max=100&adv_age=1100'> <i class='sprite-icons-binsearch'></i></a> ",
+		NzbFinder = " <a target='_blank' title='NzbFinder' href='https://www.nzbfinder.ws/search/" + tSearchString + "'> <i class='sprite-icons-nzbfinder'></i></a> ",
+		OMGWTFNZBz = " <a target='_blank' title='OMGWTFNZBs' href='http://omgwtfnzbs.org/browse.php?search=" + tSearchStringPlus + "&amp;cat=default&amp;sort=1&amp;type=1'> <i class='sprite-icons-omg'></i></a> ",
+		DogNZB = " <a target='_blank' title='DogNZB' href='http://dognzb.cr/search/" + tSearchString + "'> <i class='sprite-icons-dognzb'></i></a> ",
+		NZBClub = " <a target='_blank' title='NZBClub' href='http://www.nzbclub.com/search.aspx?q=" + tSearchStringPlus + "'> <i class='sprite-icons-nzbclub'></i></a> ",
+		FindNzb = " <a target='_blank' title='FindNzb' href='http://findnzb.net/?q=" + tSearchStringPlus + "'> <i class='sprite-icons-findnzb'></i></a> ",
+		NZBGeek = " <a target='_blank' title='NZBGeek' href='https://nzbgeek.info/geekseek.php?browseincludewords=" + tSearchString + "'> <i class='sprite-icons-nzbgeek'></i></a> ",
 		GingaDADDY = " <a target='_blank' title='GingaDADDY' href='https://www.gingadaddy.com/nzbbrowse.php?b=2&st=1&k=" + tSearchStringPlus + "&c=0&g=0&sr=1&o=0'> <i class='sprite-icons-gingadaddy'></i></a> ";
+
 		ListNzb = NZBsDotOrg + NZBIndex + NZBKing + Binsearch + NzbFinder + OMGWTFNZBz + DogNZB + NZBClub + FindNzb + NZBGeek + GingaDADDY;
 
 	//newznab public
 	var ListNewznab,
-		Nzbs2go,
-		NzbIndexIn,
-		NzbPlanet,
-		NzbNdx,
-		Dusky,
-		HomeOfNzb;
+		OZNzb = " <a target='_blank' title='OZNzb' href='https://www.oznzb.com/search/" + tSearchString + "'> <i class='sprite-icons-oznzb'></i></a> ",
+		NzbSu = " <a target='_blank' title='NzbSu' href='https://nzb.su/search/" + tSearchString + "'> <i class='sprite-icons-nzbsu'></i></a> ",
+		Nzbs2go = " <a target='_blank' title='Nzbs2go' href='http://www.nzbs4u.net/search/" + tSearchString + "'> <i class='sprite-icons-nzbs2go'></i></a> ",
+		NzbIndexIn = " <a target='_blank' title='NzbIndexIn' href='http://nzbindex.in/search/" + tSearchString + "'> <i class='sprite-icons-nzbindexin'></i></a> ",
+		NzbPlanet = " <a target='_blank' title='NzbPlanet' href='https://nzbplanet.net/search/" + tSearchStringPlus + "'> <i class='sprite-icons-nzbplanet'></i></a> ",
+		Dusky = " <a target='_blank' title='Dusky' href='https://dusky.deepcave.net/search/" + tSearchString + "'> <i class='sprite-icons-dusky'></i></a> ",
+		DrunkenSlug = " <a target='_blank' title='Drunken Slug' href='https://drunkenslug.com/search/" + tSearchString + "'> <i class='sprite-icons-drunkenslug'></i></a> ";
 
-		OZNzb = " <a target='_blank' title='OZNzb' href='https://www.oznzb.com/search/" + tSearchString + "'> <i class='sprite-icons-oznzb'></i></a> ";
-		NzbSu = " <a target='_blank' title='NzbSu' href='https://nzb.su/search/" + tSearchString + "'> <i class='sprite-icons-nzbsu'></i></a> ";
-		Nzbs2go = " <a target='_blank' title='Nzbs2go' href='http://www.nzbs4u.net/search/" + tSearchString + "'> <i class='sprite-icons-nzbs2go'></i></a> ";
-		NzbIndexIn = " <a target='_blank' title='NzbIndexIn' href='http://nzbindex.in/search/" + tSearchString + "'> <i class='sprite-icons-nzbindexin'></i></a> ";
-		NzbPlanet = " <a target='_blank' title='NzbPlanet' href='https://nzbplanet.net/search/" + tSearchStringPlus + "'> <i class='sprite-icons-nzbplanet'></i></a> ";
-		NzbNdx = " <a target='_blank' title='NzbNdx' href='http://www.nzbndx.com/search/" + tSearchString + "'> <i class='sprite-icons-nzbndx'></i></a> ";
-		Dusky = " <a target='_blank' title='Dusky' href='https://dusky.deepcave.net/search/" + tSearchString + "'> <i class='sprite-icons-dusky'></i></a> ";
-		HomeOfNzb = " <a target='_blank' title='HomeOfNzb' href='http://homeofnzb.com/search/" + tSearchString + "'> <i class='sprite-icons-homeofnzb'></i></a> ";
-		ListNewznab = OZNzb + NzbSu + Nzbs2go + NzbIndexIn + NzbPlanet + NzbNdx + Dusky + HomeOfNzb;
+		ListNewznab = OZNzb + NzbSu + Nzbs2go + NzbIndexIn + NzbPlanet + Dusky + DrunkenSlug;
 
 	//Other Links (no search param passed)
 	var ListOther,
+		NZBMovieSeeker = " <a target='_blank' title='NZB Movie Seeker' href='http://www.nzbmovieseeker.com/'> <i class='sprite-icons-nzbmovieseeker'></i></a> ";
 
-		NzbRss = " <a target='_blank' title='NzbRss' href='http://www.nzb-rss.com/'> <i class='sprite-icons-nzbrss'></i></a> ";
-		EzTv = " <a target='_blank' title='EZTV' href='http://eztv.it/'> <i class='sprite-icons-eztv'></i></a> ";
-		ListOther = NzbRss + EzTv;
+		ListOther = NZBMovieSeeker;
 
 	//Bit Torrent Links
 	var ListTorrent,
-		Strike,
-		Popcorn,
-		BTDigg,
-		MetaSearch,
-		TorrentProject,
-		TorrentBox,
-		NewTorrents,
-		KickAssTorrents,
-		ThePirateBay,
-		OldPirateBay,
-		ExtraTorrent,
-		ISOHunt,
-		BitSnoop,
-		l337x,
-		h33t,
-		TorrentzEu;
+		BTDigg = "", //" <a target='_blank' title='BTDigg' href='http://btdigg.org/search?info_hash=&q=" + tSearchStringPlus + "'> <i class='sprite-icons-btdigg'></i></a> ",
+		MetaSearch = " <a target='_blank' title='MetaSearch' href='http://metasearch.torrentproject.com/#!search=" + tSearchStringPlus + "'> <i class='sprite-icons-metasearch'></i></a> ",
+		TorrentProject = " <a target='_blank' title='TorrentProject' href='http://torrentproject.se/?s=" + tSearchStringPlus + "'> <i class='sprite-icons-torrentproject'></i></a> ",
+		NewTorrents = " <a target='_blank' title='NewTorrents' href='http://www.newtorrents.info/search/" + tSearchString + "'> <i class='sprite-icons-newtorrents'></i></a> ",
+		KickAssTorrents = " <a target='_blank' title='KickAssTorrents' href='http://kickass.to/usearch/" + tSearchString + "/'> <i class='sprite-icons-kickasstorrents'></i></a> ",
+		ThePirateBay = " <a target='_blank' title='ThePirateBay' href='http://thepiratebay.se/search/" + tSearchString + "'> <i class='sprite-icons-thepiratebay'></i></a> ",
+		ExtraTorrent = " <a target='_blank' title='ExtraTorrent' href='http://extratorrent.com/search/?search=" + tSearchStringPlus + "'> <i class='sprite-icons-extratorrent'></i></a> ",
+		ISOHunt = " <a target='_blank' title='ISOHunt' href='http://isohunt.to/torrents/?ihq=" + tSearchStringPlus + "'> <i class='sprite-icons-isohunt'></i></a> ",
+		BitSnoop = " <a target='_blank' title='BitSnoop' href='http://bitsnoop.com/search/all/" + tSearchStringPlus + "'> <i class='sprite-icons-bitsnoop'></i></a> ",
+		l337x = " <a target='_blank' title='' href='http://1337x.to/search/" + tSearchStringPlus + "/1/'> <i class='sprite-icons-l337x'></i></a> ",
+		TorrentzEu = " <a target='_blank' title='TorrentzEu' href='http://torrentz.eu/search?f=" + tSearchStringPlus + "'> <i class='sprite-icons-torrentzeu'></i></a> ",
+		EzTv = " <a target='_blank' title='EZTV' href='https://eztv.ag/search/" + tSearchStringPlus + "'> <i class='sprite-icons-eztv'></i></a> ",
+		FastBot = " <a target='_blank' title='FastBot' href='https://www.fastbot.me/" + tSearchString + "-1-1/'> <i class='sprite-icons-fastbot'></i></a> ",
+		btdb = " <a target='_blank' title='BTDB' href='https://btdb.in/q/" + tSearchString + "/'> <i class='sprite-icons-btdb'></i></a> ",
+		TorrentDownloads = " <a target='_blank' title='Torrent Downloads' href='http://www.torrentdownloads.me/search/?search=" + tSearchStringPlus + "'> <i class='sprite-icons-torrentdownloads'></i></a> ";
 
-		Strike = " <a target='_blank' title='Strike' href='https://getstrike.net/torrents/?q=" + tSearchStringPlus + "'> <i class='sprite-icons-strike'></i></a> ";
-		Popcorn = " <a target='_blank' title='Popcorn' href='http://popcorn.cab/search?query=" + tSearchStringShowNameOnlyPlus + "'> <i class='sprite-icons-popcorn'></i></a> ";
-		BTDigg = " <a target='_blank' title='BTDigg' href='http://btdigg.org/search?info_hash=&q=" + tSearchStringPlus + "'> <i class='sprite-icons-btdigg'></i></a> ";
-		MetaSearch = " <a target='_blank' title='MetaSearch' href='http://metasearch.torrentproject.com/#!search=" + tSearchStringPlus + "'> <i class='sprite-icons-metasearch'></i></a> ";
-		TorrentProject = " <a target='_blank' title='TorrentProject' href='http://torrentproject.se/?s=" + tSearchStringPlus + "'> <i class='sprite-icons-torrentproject'></i></a> ";
-		TorrentBox = " <a target='_blank' title='TorrentBox' href='http://torrentbox.sx/search?sort=age_asc&q=" + tSearchStringPlus + "'> <i class='sprite-icons-torrentbox'></i></a> ";
-		NewTorrents = " <a target='_blank' title='NewTorrents' href='http://www.newtorrents.info/search/" + tSearchString + "'> <i class='sprite-icons-newtorrents'></i></a> ";
-		KickAssTorrents = " <a target='_blank' title='KickAssTorrents' href='http://kickass.to/usearch/" + tSearchString + "/'> <i class='sprite-icons-kickasstorrents'></i></a> ";
-		ThePirateBay = " <a target='_blank' title='ThePirateBay' href='http://thepiratebay.se/search/" + tSearchString + "'> <i class='sprite-icons-thepiratebay'></i></a> ";
-		OldPirateBay = " <a target='_blank' title='OldPirateBay' href='https://oldpiratebay.org/search.php?q=" + tSearchStringPlus + "'> <i class='sprite-icons-oldpiratebay'></i></a> ";
-		ExtraTorrent = " <a target='_blank' title='ExtraTorrent' href='http://extratorrent.com/search/?search=" + tSearchStringPlus + "'> <i class='sprite-icons-extratorrent'></i></a> ";
-		ISOHunt = " <a target='_blank' title='ISOHunt' href='http://isohunt.to/torrents/?ihq=" + tSearchStringPlus + "'> <i class='sprite-icons-isohunt'></i></a> ";
-		BitSnoop = " <a target='_blank' title='BitSnoop' href='http://bitsnoop.com/search/all/" + tSearchStringPlus + "'> <i class='sprite-icons-bitsnoop'></i></a> ";
-		l337x = " <a target='_blank' title='1337x' href='http://1337x.org/search/" + tSearchStringPlus + "/0/'> <i class='sprite-icons-1337x'></i></a> ";
-		h33t = " <a target='_blank' title='h33t' href='http://h33t.to/search/" + tSearchStringPlus + "'> <i class='sprite-icons-h33t'></i></a> ";
-		TorrentzEu = " <a target='_blank' title='TorrentzEu' href='http://torrentz.eu/search?f=" + tSearchStringPlus + "'> <i class='sprite-icons-torrentzeu'></i></a> ";
-		ListTorrent = Strike + Popcorn + BTDigg + MetaSearch + TorrentProject + TorrentBox + NewTorrents + KickAssTorrents + ThePirateBay + OldPirateBay + ExtraTorrent + ISOHunt + BitSnoop + l337x + h33t + TorrentzEu;
+		ListTorrent = BTDigg + MetaSearch + TorrentProject + NewTorrents + KickAssTorrents + ThePirateBay + ExtraTorrent + ISOHunt + BitSnoop + l337x + TorrentzEu + EzTv + FastBot + btdb + TorrentDownloads;
 
 	//XDCC Search
 	var ListXDCC,
 		SunXDCC;
 
 		ExcursionScript = " <a class='h' target='_blank' title='Excursion Script' href='https://www.dropbox.com/s/nxiorybg930gcm8/excursion9.5.install.exe'> <i class='sprite-icons-excursionscript'></i></a> ";
-		XDCCMe = " <a target='_blank' title='XDCCMe' href='http://www.xdcc.me/search.php?Description=" + tSearchStringPlus + "'> <i class='sprite-icons-xdccme'></i></a> ";
+		XDCCMe = " <a target='_blank' title='XDCCMe' href='http://www.xdcc.me'> <i class='sprite-icons-xdccme'></i></a> ";
 		SunXDCC = " <a target='_blank' title='SunXDCC' href='http://sunxdcc.com/?sterm=" + tSearchStringPlus + "'> <i class='sprite-icons-sunxdcc'></i></a> ";
 		ListXDCC = ExcursionScript + XDCCMe + SunXDCC;
 
@@ -200,36 +166,27 @@ function getResults() {
 
 	//Books / Journals
 	var ListBooks,
-		Libgen,
-		BooksC,
-		BookRE,
-		BookZZ,
-		SciHub;
+		Libgen = " <a target='_blank' title='Libgen' href='http://gen.lib.rus.ec/search.php?req="+ tSearchStringPlus + "&lg_topic=libgen&open=0&view=simple&phrase=1&column=def'> <i class='sprite-icons-book1'></i></a> ",
+		BooksC = " <a target='_blank' title='BooksC' href='http://booksc.org/s/?q=" + tSearchStringPlus + "&t=0'> <i class='sprite-icons-book2'></i></a> ",
+		BookRE = " <a target='_blank' title='SciEng' href='http://bookre.org/isearch?q=" + tSearchStringPlus + "'> <i class='sprite-icons-book3'></i></a> ",
+		BookZZ = " <a target='_blank' title='BookZZ' href='http://bookzz.org/s/?q=" + tSearchStringPlus + "&t=0'> <i class='sprite-icons-book4'></i></a> ",
+		SciHub = " <a target='_blank' title='Sci-Hub' href='http://www.sci-hub.cc/'> <i class='sprite-icons-scihub'></i></a> ";
 
-		Libgen = " <a target='_blank' title='Libgen' href='http://gen.lib.rus.ec/search.php?req="+ tSearchStringPlus + "&lg_topic=libgen&open=0&view=simple&phrase=1&column=def'> <i class='sprite-icons-book1'></i></a> ";
-		BooksC = " <a target='_blank' title='BooksC' href='http://booksc.org/s/?q=" + tSearchStringPlus + "&t=0'> <i class='sprite-icons-book2'></i></a> ";
-		BookRE = " <a target='_blank' title='SciEng' href='http://bookre.org/isearch?q=" + tSearchStringPlus + "'> <i class='sprite-icons-book3'></i></a> ";
-		BookZZ = " <a target='_blank' title='BookZZ' href='http://bookzz.org/s/?q=" + tSearchStringPlus + "&t=0'> <i class='sprite-icons-book4'></i></a> ";
-		SciHub = " <a target='_blank' title='eBooksWTF' href='http://scholar.google.com.secure.sci-hub.io/scholar?q=" + tSearchString + "'> <i class='sprite-icons-book5'></i></a> ";
 		ListBooks = Libgen + BooksC + BookRE + BookZZ + SciHub;
 
-	//MP3s
-	var ListMP3,
-		MP3skull;
+	//Music/Videos
+	var ListMusicVideos,
+		bandcamp = " <a target='_blank' title='bandcamp' href='http://bandcamp.com/search?q=" + tSearchStringPlus +"'> <i class='sprite-icons-bandcamp'></i></a> ",
+		StreamSquid = " <a target='_blank' title='streamsquid' href='http://streamsquid.com/'> <i class='sprite-icons-streamsquid'></i></a> ";
 
-		MP3skull = " <a target='_blank' title='MP3skull' href='https://mp3skull.to/mp3/" + tSearchStringPlus + ".html'> <i class='sprite-icons-mp3skull'></i></a> ";
-		ListMP3 = MP3skull;
+		ListMusicVideos = bandcamp + StreamSquid;
 
 	//PreDBs
 	var ListPreDBs,
-		VCDQ,
-		NfoHump;
-
-		PreDbMe = " <a target='_blank' title='PreDBMe' href='http://predb.me/?search=" + tSearchStringPlus + "'> <i class='sprite-icons-predbme'></i></a> ";
-		OrlyDB = " <a target='_blank' title='OrlyDB' href='http://www.orlydb.com/?q=" + tSearchStringPlus + "'> <i class='sprite-icons-orlydb'></i></a> ";
-		VCDQ = " <a target='_blank' title='VCDQ' href='http://www.vcdq.com/browse/1/0/3_2/10_9_21_22_23_24_6_28_32_19_11_3_2/0/2011_2012_2013/0/" + tSearchString + "/0/0/0'> <i class='sprite-icons-vcdq'></i></a> ";
+		PreDbMe = " <a target='_blank' title='PreDBMe' href='http://predb.me/?search=" + tSearchStringPlus + "'> <i class='sprite-icons-predbme'></i></a> ",
 		NfoHump = " <a target='_blank' title='VCDQ' href='http://www.nfohump.com/'> <i class='sprite-icons-nfohump'></i></a> ";
-		ListPreDBs = PreDbMe + OrlyDB + VCDQ + NfoHump;
+
+		ListPreDBs = PreDbMe + NfoHump;
 
 	var results = "";
 	results += "  <div class='results'>";
@@ -258,8 +215,8 @@ function getResults() {
 	results += "      <div class='row__icons'>" + ListPreDBs + "</div>";
 	results += "    </div>";
 	results += "    <div class='results__row'>";
-	results += "      <div class='row__title'>MP3s</div>";
-	results += "      <div class='row__icons'>" + ListMP3 + "</div>";
+	results += "      <div class='row__title'>Music/Videos</div>";
+	results += "      <div class='row__icons'>" + ListMusicVideos + "</div>";
 	results += "    </div>";
 	results += "    <div class='results__row'>";
 	results += "      <div class='row__title'>Other</div>";

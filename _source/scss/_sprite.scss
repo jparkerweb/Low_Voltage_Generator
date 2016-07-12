@@ -1,28 +1,24 @@
-﻿/* glue: 0.9.4 hash: 6720fa7b59 */
+﻿/* glue: 0.9.4 hash: 629f30b85a */
         .sprite-icons-lowvoltage2,
 .sprite-icons-lowvoltage,
 .sprite-icons-nzbking,
 .sprite-icons-xdccme,
 .sprite-icons-xdccfinder,
-.sprite-icons-vcdq,
 .sprite-icons-torrentzeu,
 .sprite-icons-torrentproject,
-.sprite-icons-torrentbox,
+.sprite-icons-torrentdownloads,
 .sprite-icons-thepiratebay,
 .sprite-icons-sunxdcc,
-.sprite-icons-strike,
+.sprite-icons-streamsquid,
+.sprite-icons-scihub,
 .sprite-icons-predbme,
-.sprite-icons-popcorn,
 .sprite-icons-oznzb,
-.sprite-icons-orlydb,
 .sprite-icons-omg,
-.sprite-icons-oldpiratebay,
 .sprite-icons-nzbsu,
 .sprite-icons-nzbsdotorg,
 .sprite-icons-nzbs2go,
-.sprite-icons-nzbrss,
 .sprite-icons-nzbplanet,
-.sprite-icons-nzbndx,
+.sprite-icons-nzbmovieseeker,
 .sprite-icons-nzbindexin,
 .sprite-icons-nzbindex,
 .sprite-icons-nzbgeek,
@@ -30,20 +26,21 @@
 .sprite-icons-nzbclub,
 .sprite-icons-nfohump,
 .sprite-icons-newtorrents,
-.sprite-icons-mp3skull,
 .sprite-icons-metasearch,
+.sprite-icons-l337x,
 .sprite-icons-kickasstorrents,
 .sprite-icons-isohunt,
-.sprite-icons-homeofnzb,
-.sprite-icons-h33t,
 .sprite-icons-gingadaddy,
 .sprite-icons-findnzb,
 .sprite-icons-filestube,
+.sprite-icons-fastbot,
 .sprite-icons-eztv,
 .sprite-icons-extratorrent,
 .sprite-icons-dusky,
+.sprite-icons-drunkenslug,
 .sprite-icons-dognzb,
 .sprite-icons-btdigg,
+.sprite-icons-btdb,
 .sprite-icons-book7,
 .sprite-icons-book6,
 .sprite-icons-book5,
@@ -53,9 +50,9 @@
 .sprite-icons-book1,
 .sprite-icons-bitsnoop,
 .sprite-icons-binsearch,
+.sprite-icons-bandcamp,
 .sprite-icons-audiobookvault,
 .sprite-icons-audiobookbay,
-.sprite-icons-1337x,
 .sprite-icons-excursionscript,
 .sprite-icons-p {
             background-image: url('../img/icons.png');
@@ -92,320 +89,302 @@
             height: 26px;
         }
         
-        .sprite-icons-vcdq {
+        .sprite-icons-torrentzeu {
             background-position: -93px -72px;
             width: 26px;
             height: 26px;
         }
         
-        .sprite-icons-torrentzeu {
+        .sprite-icons-torrentproject {
             background-position: -2px -103px;
             width: 26px;
             height: 26px;
         }
         
-        .sprite-icons-torrentproject {
+        .sprite-icons-torrentdownloads {
             background-position: -32px -103px;
             width: 26px;
             height: 26px;
         }
         
-        .sprite-icons-torrentbox {
+        .sprite-icons-thepiratebay {
             background-position: -62px -103px;
             width: 26px;
             height: 26px;
         }
         
-        .sprite-icons-thepiratebay {
+        .sprite-icons-sunxdcc {
             background-position: -92px -103px;
             width: 26px;
             height: 26px;
         }
         
-        .sprite-icons-sunxdcc {
+        .sprite-icons-streamsquid {
             background-position: -142px -2px;
             width: 26px;
             height: 26px;
         }
         
-        .sprite-icons-strike {
+        .sprite-icons-scihub {
             background-position: -142px -32px;
             width: 26px;
-            height: 26px;
+            height: 23px;
         }
         
         .sprite-icons-predbme {
-            background-position: -142px -62px;
-            width: 26px;
-            height: 26px;
-        }
-        
-        .sprite-icons-popcorn {
-            background-position: -142px -92px;
+            background-position: -142px -59px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-oznzb {
-            background-position: -2px -133px;
-            width: 26px;
-            height: 26px;
-        }
-        
-        .sprite-icons-orlydb {
-            background-position: -32px -133px;
+            background-position: -142px -89px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-omg {
-            background-position: -62px -133px;
-            width: 26px;
-            height: 26px;
-        }
-        
-        .sprite-icons-oldpiratebay {
-            background-position: -92px -133px;
+            background-position: -2px -133px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-nzbsu {
-            background-position: -122px -133px;
+            background-position: -32px -133px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-nzbsdotorg {
-            background-position: -172px -2px;
+            background-position: -62px -133px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-nzbs2go {
-            background-position: -172px -32px;
-            width: 26px;
-            height: 26px;
-        }
-        
-        .sprite-icons-nzbrss {
-            background-position: -172px -62px;
+            background-position: -92px -133px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-nzbplanet {
-            background-position: -172px -92px;
+            background-position: -122px -133px;
             width: 26px;
             height: 26px;
         }
         
-        .sprite-icons-nzbndx {
-            background-position: -172px -122px;
+        .sprite-icons-nzbmovieseeker {
+            background-position: -172px -2px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-nzbindexin {
-            background-position: -2px -163px;
+            background-position: -172px -32px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-nzbindex {
-            background-position: -32px -163px;
+            background-position: -172px -62px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-nzbgeek {
-            background-position: -62px -163px;
+            background-position: -172px -92px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-nzbfinder {
-            background-position: -92px -163px;
+            background-position: -172px -122px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-nzbclub {
-            background-position: -122px -163px;
+            background-position: -2px -163px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-nfohump {
-            background-position: -152px -163px;
+            background-position: -32px -163px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-newtorrents {
-            background-position: -202px -2px;
-            width: 26px;
-            height: 26px;
-        }
-        
-        .sprite-icons-mp3skull {
-            background-position: -202px -32px;
+            background-position: -62px -163px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-metasearch {
-            background-position: -202px -62px;
+            background-position: -92px -163px;
+            width: 26px;
+            height: 26px;
+        }
+        
+        .sprite-icons-l337x {
+            background-position: -122px -163px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-kickasstorrents {
-            background-position: -202px -92px;
+            background-position: -152px -163px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-isohunt {
-            background-position: -202px -122px;
-            width: 26px;
-            height: 26px;
-        }
-        
-        .sprite-icons-homeofnzb {
-            background-position: -202px -152px;
-            width: 26px;
-            height: 26px;
-        }
-        
-        .sprite-icons-h33t {
-            background-position: -2px -193px;
+            background-position: -202px -2px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-gingadaddy {
-            background-position: -32px -193px;
+            background-position: -202px -32px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-findnzb {
-            background-position: -62px -193px;
+            background-position: -202px -62px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-filestube {
-            background-position: -92px -193px;
+            background-position: -202px -92px;
+            width: 26px;
+            height: 26px;
+        }
+        
+        .sprite-icons-fastbot {
+            background-position: -202px -122px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-eztv {
-            background-position: -122px -193px;
+            background-position: -202px -152px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-extratorrent {
-            background-position: -152px -193px;
+            background-position: -2px -193px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-dusky {
-            background-position: -182px -193px;
+            background-position: -32px -193px;
+            width: 26px;
+            height: 26px;
+        }
+        
+        .sprite-icons-drunkenslug {
+            background-position: -62px -193px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-dognzb {
-            background-position: -232px -2px;
+            background-position: -92px -193px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-btdigg {
-            background-position: -232px -32px;
+            background-position: -122px -193px;
+            width: 26px;
+            height: 26px;
+        }
+        
+        .sprite-icons-btdb {
+            background-position: -152px -193px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-book7 {
-            background-position: -232px -62px;
+            background-position: -182px -193px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-book6 {
-            background-position: -232px -92px;
+            background-position: -232px -2px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-book5 {
-            background-position: -232px -122px;
+            background-position: -232px -32px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-book4 {
-            background-position: -232px -152px;
+            background-position: -232px -62px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-book3 {
-            background-position: -232px -182px;
+            background-position: -232px -92px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-book2 {
-            background-position: -2px -223px;
+            background-position: -232px -122px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-book1 {
-            background-position: -32px -223px;
+            background-position: -232px -152px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-bitsnoop {
-            background-position: -62px -223px;
+            background-position: -232px -182px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-binsearch {
-            background-position: -92px -223px;
+            background-position: -2px -223px;
+            width: 26px;
+            height: 26px;
+        }
+        
+        .sprite-icons-bandcamp {
+            background-position: -32px -223px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-audiobookvault {
-            background-position: -122px -223px;
+            background-position: -62px -223px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-audiobookbay {
-            background-position: -152px -223px;
-            width: 26px;
-            height: 26px;
-        }
-        
-        .sprite-icons-1337x {
-            background-position: -182px -223px;
+            background-position: -92px -223px;
             width: 26px;
             height: 26px;
         }
         
         .sprite-icons-excursionscript {
-            background-position: -212px -223px;
+            background-position: -122px -223px;
             width: 18px;
             height: 18px;
         }
@@ -422,25 +401,21 @@
     .sprite-icons-nzbking,
     .sprite-icons-xdccme,
     .sprite-icons-xdccfinder,
-    .sprite-icons-vcdq,
     .sprite-icons-torrentzeu,
     .sprite-icons-torrentproject,
-    .sprite-icons-torrentbox,
+    .sprite-icons-torrentdownloads,
     .sprite-icons-thepiratebay,
     .sprite-icons-sunxdcc,
-    .sprite-icons-strike,
+    .sprite-icons-streamsquid,
+    .sprite-icons-scihub,
     .sprite-icons-predbme,
-    .sprite-icons-popcorn,
     .sprite-icons-oznzb,
-    .sprite-icons-orlydb,
     .sprite-icons-omg,
-    .sprite-icons-oldpiratebay,
     .sprite-icons-nzbsu,
     .sprite-icons-nzbsdotorg,
     .sprite-icons-nzbs2go,
-    .sprite-icons-nzbrss,
     .sprite-icons-nzbplanet,
-    .sprite-icons-nzbndx,
+    .sprite-icons-nzbmovieseeker,
     .sprite-icons-nzbindexin,
     .sprite-icons-nzbindex,
     .sprite-icons-nzbgeek,
@@ -448,20 +423,21 @@
     .sprite-icons-nzbclub,
     .sprite-icons-nfohump,
     .sprite-icons-newtorrents,
-    .sprite-icons-mp3skull,
     .sprite-icons-metasearch,
+    .sprite-icons-l337x,
     .sprite-icons-kickasstorrents,
     .sprite-icons-isohunt,
-    .sprite-icons-homeofnzb,
-    .sprite-icons-h33t,
     .sprite-icons-gingadaddy,
     .sprite-icons-findnzb,
     .sprite-icons-filestube,
+    .sprite-icons-fastbot,
     .sprite-icons-eztv,
     .sprite-icons-extratorrent,
     .sprite-icons-dusky,
+    .sprite-icons-drunkenslug,
     .sprite-icons-dognzb,
     .sprite-icons-btdigg,
+    .sprite-icons-btdb,
     .sprite-icons-book7,
     .sprite-icons-book6,
     .sprite-icons-book5,
@@ -471,9 +447,9 @@
     .sprite-icons-book1,
     .sprite-icons-bitsnoop,
     .sprite-icons-binsearch,
+    .sprite-icons-bandcamp,
     .sprite-icons-audiobookvault,
     .sprite-icons-audiobookbay,
-    .sprite-icons-1337x,
     .sprite-icons-excursionscript,
     .sprite-icons-p {
                 background-image: url('../img/icons.png');
