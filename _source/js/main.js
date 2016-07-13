@@ -141,9 +141,10 @@ function getResults() {
 		EzTv = " <a target='_blank' title='EZTV' href='https://eztv.ag/search/" + tSearchStringPlus + "'> <i class='sprite-icons-eztv'></i></a> ",
 		FastBot = " <a target='_blank' title='FastBot' href='https://www.fastbot.me/" + tSearchString + "-1-1/'> <i class='sprite-icons-fastbot'></i></a> ",
 		btdb = " <a target='_blank' title='BTDB' href='https://btdb.in/q/" + tSearchString + "/'> <i class='sprite-icons-btdb'></i></a> ",
-		TorrentDownloads = " <a target='_blank' title='Torrent Downloads' href='http://www.torrentdownloads.me/search/?search=" + tSearchStringPlus + "'> <i class='sprite-icons-torrentdownloads'></i></a> ";
+		TorrentDownloads = " <a target='_blank' title='Torrent Downloads' href='http://www.torrentdownloads.me/search/?search=" + tSearchStringPlus + "'> <i class='sprite-icons-torrentdownloads'></i></a> ",
+		LimeTorrents = " <a target='_blank' title='Lime Torrents' href='https://www.limetorrents.cc/search/all/" + tSearchString + "/seeds/1/'> <i class='sprite-icons-limetorrents'></i></a> ";
 
-		ListTorrent = BTDigg + MetaSearch + TorrentProject + NewTorrents + KickAssTorrents + ThePirateBay + ExtraTorrent + ISOHunt + BitSnoop + l337x + TorrentzEu + EzTv + FastBot + btdb + TorrentDownloads;
+		ListTorrent = BTDigg + MetaSearch + TorrentProject + NewTorrents + KickAssTorrents + ThePirateBay + ExtraTorrent + ISOHunt + BitSnoop + l337x + TorrentzEu + EzTv + FastBot + btdb + TorrentDownloads + LimeTorrents;
 
 	//XDCC Search
 	var ListXDCC,
@@ -154,39 +155,48 @@ function getResults() {
 		SunXDCC = " <a target='_blank' title='SunXDCC' href='http://sunxdcc.com/?sterm=" + tSearchStringPlus + "'> <i class='sprite-icons-sunxdcc'></i></a> ";
 		ListXDCC = ExcursionScript + XDCCMe + SunXDCC;
 
-	//AudioBooks
-	var ListAudioBooks,
+	//AudioBook
+	var ListAudioBook,
 		AudioBookBay;
 
 		AudioBookBay = " <a target='_blank' title='AudioBookBay' href='http://audiobookbay.co/?s=" + tSearchStringPlus + "'> <i class='sprite-icons-audiobookbay'></i></a> ";
 		AudioBookVault = " <a target='_blank' title='AudioBookVault' href='http://www.audiobookvault.ws/?s=" + tSearchStringPlus + "'> <i class='sprite-icons-audiobookvault'></i></a> ";
-		ListAudioBooks = AudioBookBay + AudioBookVault;
+		ListAudioBook = AudioBookBay + AudioBookVault;
 		// add btdigg to the list
-		ListAudioBooks += BTDigg;
+		ListAudioBook += BTDigg;
 
-	//Books / Journals
-	var ListBooks,
+	//Book / Journal
+	var ListBook,
 		Libgen = " <a target='_blank' title='Libgen' href='http://gen.lib.rus.ec/search.php?req="+ tSearchStringPlus + "&lg_topic=libgen&open=0&view=simple&phrase=1&column=def'> <i class='sprite-icons-book1'></i></a> ",
 		BooksC = " <a target='_blank' title='BooksC' href='http://booksc.org/s/?q=" + tSearchStringPlus + "&t=0'> <i class='sprite-icons-book2'></i></a> ",
 		BookRE = " <a target='_blank' title='SciEng' href='http://bookre.org/isearch?q=" + tSearchStringPlus + "'> <i class='sprite-icons-book3'></i></a> ",
 		BookZZ = " <a target='_blank' title='BookZZ' href='http://bookzz.org/s/?q=" + tSearchStringPlus + "&t=0'> <i class='sprite-icons-book4'></i></a> ",
 		SciHub = " <a target='_blank' title='Sci-Hub' href='http://www.sci-hub.cc/'> <i class='sprite-icons-scihub'></i></a> ";
 
-		ListBooks = Libgen + BooksC + BookRE + BookZZ + SciHub;
+		ListBook = Libgen + BooksC + BookRE + BookZZ + SciHub;
 
-	//Music/Videos
-	var ListMusicVideos,
+	//Music/Video
+	var ListMusicVideo,
 		bandcamp = " <a target='_blank' title='bandcamp' href='http://bandcamp.com/search?q=" + tSearchStringPlus +"'> <i class='sprite-icons-bandcamp'></i></a> ",
-		StreamSquid = " <a target='_blank' title='streamsquid' href='http://streamsquid.com/'> <i class='sprite-icons-streamsquid'></i></a> ";
+		StreamSquid = " <a target='_blank' title='streamsquid' href='http://streamsquid.com/'> <i class='sprite-icons-streamsquid'></i></a> ",
+		mp3Juices = " <a target='_blank' title='MP3 Juices' href='http://www.mp3juices.cc/'> <i class='sprite-icons-mp3juices'></i></a> ",
+		tunefind = " <a target='_blank' title='Tune Find' href='http://www.tunefind.com/search/site?q=" + tSearchStringPlus + "'> <i class='sprite-icons-tunefind'></i></a> ";
 
-		ListMusicVideos = bandcamp + StreamSquid;
+		ListMusicVideo = bandcamp + StreamSquid + mp3Juices + tunefind;
 
 	//PreDBs
-	var ListPreDBs,
+	var ListPreDB,
 		PreDbMe = " <a target='_blank' title='PreDBMe' href='http://predb.me/?search=" + tSearchStringPlus + "'> <i class='sprite-icons-predbme'></i></a> ",
 		NfoHump = " <a target='_blank' title='VCDQ' href='http://www.nfohump.com/'> <i class='sprite-icons-nfohump'></i></a> ";
 
-		ListPreDBs = PreDbMe + NfoHump;
+		ListPreDB = PreDbMe + NfoHump;
+
+	//Subtitle
+	var ListSubtitle,
+		OpenSubtitles = " <a target='_blank' title='Open Subtitles' href='http://www.opensubtitles.org/en/search2/sublanguageid-all/moviename-" + tSearchStringPlus + "'> <i class='sprite-icons-opensubtitles'></i></a> ";
+
+		ListSubtitle = OpenSubtitles;
+
 
 	var results = "";
 	results += "  <div class='results'>";
@@ -203,20 +213,20 @@ function getResults() {
 	results += "      <div class='row__icons'>" + ListTorrent + "</div>";
 	results += "    </div>";
 	results += "    <div class='results__row'>";
-	results += "      <div class='row__title'>Audio Books</div>";
-	results += "      <div class='row__icons'>" + ListAudioBooks + "</div>";
+	results += "      <div class='row__title'>Audio Book</div>";
+	results += "      <div class='row__icons'>" + ListAudioBook + "</div>";
 	results += "    </div>";
 	results += "    <div class='results__row'>";
-	results += "      <div class='row__title'>Books</div>";
-	results += "      <div class='row__icons'>" + ListBooks + "</div>";
+	results += "      <div class='row__title'>Book</div>";
+	results += "      <div class='row__icons'>" + ListBook + "</div>";
 	results += "    </div>";
 	results += "    <div class='results__row'>";
-	results += "      <div class='row__title'>DBs</div>";
-	results += "      <div class='row__icons'>" + ListPreDBs + "</div>";
+	results += "      <div class='row__title'>Pre DB</div>";
+	results += "      <div class='row__icons'>" + ListPreDB + "</div>";
 	results += "    </div>";
 	results += "    <div class='results__row'>";
-	results += "      <div class='row__title'>Music/Videos</div>";
-	results += "      <div class='row__icons'>" + ListMusicVideos + "</div>";
+	results += "      <div class='row__title'>Music/Video</div>";
+	results += "      <div class='row__icons'>" + ListMusicVideo + "</div>";
 	results += "    </div>";
 	results += "    <div class='results__row'>";
 	results += "      <div class='row__title'>Other</div>";
@@ -225,6 +235,10 @@ function getResults() {
 	results += "    <div class='results__row'>";
 	results += "      <div class='row__title'>XDCC</div>";
 	results += "      <div class='row__icons'>" + ListXDCC + "</div>";
+	results += "    </div>";
+	results += "    <div class='results__row'>";
+	results += "      <div class='row__title'>Subtitle</div>";
+	results += "      <div class='row__icons'>" + ListSubtitle + "</div>";
 	results += "    </div>";
 	results += "  </div>";
 
