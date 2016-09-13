@@ -102,22 +102,19 @@ function getResults() {
 		DogNZB = " <a target='_blank' title='DogNZB' href='http://dognzb.cr/search/" + tSearchString + "'> <i class='sprite-icons-dognzb'></i></a> ",
 		NZBClub = " <a target='_blank' title='NZBClub' href='http://www.nzbclub.com/search.aspx?q=" + tSearchStringPlus + "'> <i class='sprite-icons-nzbclub'></i></a> ",
 		FindNzb = " <a target='_blank' title='FindNzb' href='http://findnzb.net/?q=" + tSearchStringPlus + "'> <i class='sprite-icons-findnzb'></i></a> ",
-		NZBGeek = " <a target='_blank' title='NZBGeek' href='https://nzbgeek.info/geekseek.php?browseincludewords=" + tSearchString + "'> <i class='sprite-icons-nzbgeek'></i></a> ",
-		GingaDADDY = " <a target='_blank' title='GingaDADDY' href='https://www.gingadaddy.com/nzbbrowse.php?b=2&st=1&k=" + tSearchStringPlus + "&c=0&g=0&sr=1&o=0'> <i class='sprite-icons-gingadaddy'></i></a> ";
+		NZBGeek = " <a target='_blank' title='NZBGeek' href='https://nzbgeek.info/geekseek.php?browseincludewords=" + tSearchString + "'> <i class='sprite-icons-nzbgeek'></i></a> ";
 
-		ListNzb = NZBsDotOrg + NZBIndex + NZBKing + Binsearch + NzbFinder + OMGWTFNZBz + DogNZB + NZBClub + FindNzb + NZBGeek + GingaDADDY;
+		ListNzb = NZBsDotOrg + NZBIndex + NZBKing + Binsearch + NzbFinder + OMGWTFNZBz + DogNZB + NZBClub + FindNzb + NZBGeek;
 
 	//newznab public
 	var ListNewznab,
 		OZNzb = " <a target='_blank' title='OZNzb' href='https://www.oznzb.com/search/" + tSearchString + "'> <i class='sprite-icons-oznzb'></i></a> ",
 		NzbSu = " <a target='_blank' title='NzbSu' href='https://nzb.su/search/" + tSearchString + "'> <i class='sprite-icons-nzbsu'></i></a> ",
-		Nzbs2go = " <a target='_blank' title='Nzbs2go' href='http://www.nzbs4u.net/search/" + tSearchString + "'> <i class='sprite-icons-nzbs2go'></i></a> ",
 		NzbIndexIn = " <a target='_blank' title='NzbIndexIn' href='http://nzbindex.in/search/" + tSearchString + "'> <i class='sprite-icons-nzbindexin'></i></a> ",
 		NzbPlanet = " <a target='_blank' title='NzbPlanet' href='https://nzbplanet.net/search/" + tSearchStringPlus + "'> <i class='sprite-icons-nzbplanet'></i></a> ",
-		Dusky = " <a target='_blank' title='Dusky' href='https://dusky.deepcave.net/search/" + tSearchString + "'> <i class='sprite-icons-dusky'></i></a> ",
-		DrunkenSlug = " <a target='_blank' title='Drunken Slug' href='https://drunkenslug.com/search/" + tSearchString + "'> <i class='sprite-icons-drunkenslug'></i></a> ";
+		Dusky = " <a target='_blank' title='Dusky' href='https://dusky.deepcave.net/search/" + tSearchString + "'> <i class='sprite-icons-dusky'></i></a> ";
 
-		ListNewznab = OZNzb + NzbSu + Nzbs2go + NzbIndexIn + NzbPlanet + Dusky + DrunkenSlug;
+		ListNewznab = OZNzb + NzbSu + NzbIndexIn + NzbPlanet + Dusky;
 
 	//Other Links (no search param passed)
 	var ListOther,
@@ -128,23 +125,19 @@ function getResults() {
 	//Bit Torrent Links
 	var ListTorrent,
 		BTDigg = "", //" <a target='_blank' title='BTDigg' href='http://btdigg.org/search?info_hash=&q=" + tSearchStringPlus + "'> <i class='sprite-icons-btdigg'></i></a> ",
-		MetaSearch = " <a target='_blank' title='MetaSearch' href='http://metasearch.torrentproject.com/#!search=" + tSearchStringPlus + "'> <i class='sprite-icons-metasearch'></i></a> ",
 		TorrentProject = " <a target='_blank' title='TorrentProject' href='http://torrentproject.se/?s=" + tSearchStringPlus + "'> <i class='sprite-icons-torrentproject'></i></a> ",
 		NewTorrents = " <a target='_blank' title='NewTorrents' href='http://www.newtorrents.info/search/" + tSearchString + "'> <i class='sprite-icons-newtorrents'></i></a> ",
-		KickAssTorrents = " <a target='_blank' title='KickAssTorrents' href='http://kickass.to/usearch/" + tSearchString + "/'> <i class='sprite-icons-kickasstorrents'></i></a> ",
 		ThePirateBay = " <a target='_blank' title='ThePirateBay' href='http://thepiratebay.se/search/" + tSearchString + "'> <i class='sprite-icons-thepiratebay'></i></a> ",
 		ExtraTorrent = " <a target='_blank' title='ExtraTorrent' href='http://extratorrent.com/search/?search=" + tSearchStringPlus + "'> <i class='sprite-icons-extratorrent'></i></a> ",
 		ISOHunt = " <a target='_blank' title='ISOHunt' href='http://isohunt.to/torrents/?ihq=" + tSearchStringPlus + "'> <i class='sprite-icons-isohunt'></i></a> ",
 		BitSnoop = " <a target='_blank' title='BitSnoop' href='http://bitsnoop.com/search/all/" + tSearchStringPlus + "'> <i class='sprite-icons-bitsnoop'></i></a> ",
 		l337x = " <a target='_blank' title='' href='http://1337x.to/search/" + tSearchStringPlus + "/1/'> <i class='sprite-icons-l337x'></i></a> ",
-		TorrentzEu = " <a target='_blank' title='TorrentzEu' href='http://torrentz.eu/search?f=" + tSearchStringPlus + "'> <i class='sprite-icons-torrentzeu'></i></a> ",
 		EzTv = " <a target='_blank' title='EZTV' href='https://eztv.ag/search/" + tSearchStringPlus + "'> <i class='sprite-icons-eztv'></i></a> ",
 		FastBot = " <a target='_blank' title='FastBot' href='https://www.fastbot.me/" + tSearchString + "-1-1/'> <i class='sprite-icons-fastbot'></i></a> ",
 		btdb = " <a target='_blank' title='BTDB' href='https://btdb.in/q/" + tSearchString + "/'> <i class='sprite-icons-btdb'></i></a> ",
-		TorrentDownloads = " <a target='_blank' title='Torrent Downloads' href='http://www.torrentdownloads.me/search/?search=" + tSearchStringPlus + "'> <i class='sprite-icons-torrentdownloads'></i></a> ",
 		LimeTorrents = " <a target='_blank' title='Lime Torrents' href='https://www.limetorrents.cc/search/all/" + tSearchString + "/seeds/1/'> <i class='sprite-icons-limetorrents'></i></a> ";
 
-		ListTorrent = BTDigg + MetaSearch + TorrentProject + NewTorrents + KickAssTorrents + ThePirateBay + ExtraTorrent + ISOHunt + BitSnoop + l337x + TorrentzEu + EzTv + FastBot + btdb + TorrentDownloads + LimeTorrents;
+		ListTorrent = BTDigg + TorrentProject + NewTorrents + ThePirateBay + ExtraTorrent + ISOHunt + BitSnoop + l337x + EzTv + FastBot + btdb + LimeTorrents;
 
 	//XDCC Search
 	var ListXDCC,
