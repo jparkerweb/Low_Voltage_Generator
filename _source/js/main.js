@@ -127,10 +127,6 @@ function getResults() {
 		BTDigg = "", //" <a target='_blank' title='BTDigg' href='http://btdigg.org/search?info_hash=&q=" + tSearchStringPlus + "'> <i class='sprite-icons-btdigg'></i></a> ",
 		TorrentProject = " <a target='_blank' title='TorrentProject' href='http://torrentproject.se/?s=" + tSearchStringPlus + "'> <i class='sprite-icons-torrentproject'></i></a> ",
 		NewTorrents = " <a target='_blank' title='NewTorrents' href='http://www.newtorrents.info/search/" + tSearchString + "'> <i class='sprite-icons-newtorrents'></i></a> ",
-<<<<<<< HEAD
-=======
-		KickAssTorrents = " <a target='_blank' title='KickAssTorrents' href='https://kattorrentes.com/usearch/" + tSearchString + "/'> <i class='sprite-icons-kickasstorrents'></i></a> ",
->>>>>>> origin/master
 		ThePirateBay = " <a target='_blank' title='ThePirateBay' href='http://thepiratebay.se/search/" + tSearchString + "'> <i class='sprite-icons-thepiratebay'></i></a> ",
 		ExtraTorrent = " <a target='_blank' title='ExtraTorrent' href='http://extratorrent.com/search/?search=" + tSearchStringPlus + "'> <i class='sprite-icons-extratorrent'></i></a> ",
 		ISOHunt = " <a target='_blank' title='ISOHunt' href='http://isohunt.to/torrents/?ihq=" + tSearchStringPlus + "'> <i class='sprite-icons-isohunt'></i></a> ",
@@ -139,9 +135,17 @@ function getResults() {
 		EzTv = " <a target='_blank' title='EZTV' href='https://eztv.ag/search/" + tSearchStringPlus + "'> <i class='sprite-icons-eztv'></i></a> ",
 		FastBot = " <a target='_blank' title='FastBot' href='https://www.fastbot.me/" + tSearchString + "-1-1/'> <i class='sprite-icons-fastbot'></i></a> ",
 		btdb = " <a target='_blank' title='BTDB' href='https://btdb.in/q/" + tSearchString + "/'> <i class='sprite-icons-btdb'></i></a> ",
+		TorrentLeech = " <a target='_blank' title='BTDB' href='https://www.torrentleech.org/torrents/browse/index/query/" + tSearchString + "/'> <i class='sprite-icons-torrentleech'></i></a> ",
 		LimeTorrents = " <a target='_blank' title='Lime Torrents' href='https://www.limetorrents.cc/search/all/" + tSearchString + "/seeds/1/'> <i class='sprite-icons-limetorrents'></i></a> ";
 
-		ListTorrent = BTDigg + TorrentProject + NewTorrents + ThePirateBay + ExtraTorrent + ISOHunt + BitSnoop + l337x + EzTv + FastBot + btdb + LimeTorrents;
+		ListTorrent = BTDigg + TorrentProject + NewTorrents + ThePirateBay + ExtraTorrent + ISOHunt + BitSnoop + l337x + EzTv + FastBot + btdb + TorrentLeech + LimeTorrents;
+
+
+	//Anime Torrents
+	var ListAnimeTorrent,
+		nyaa =  "<a target='_blank' title='BTDB' href='http://www.nyaa.se/?page=search&cats=0_0&filter=0&term=" + tSearchStringPlus + "/'> <i class='sprite-icons-nyaa'></i></a> ";
+
+	ListAnimeTorrent = nyaa;
 
 	//XDCC Search
 	var ListXDCC,
@@ -208,6 +212,10 @@ function getResults() {
 	results += "    <div class='results__row'>";
 	results += "      <div class='row__title'>Torrent</div>";
 	results += "      <div class='row__icons'>" + ListTorrent + "</div>";
+	results += "    </div>";
+	results += "    <div class='results__row'>";
+	results += "      <div class='row__title'>Anime Torrent</div>";
+	results += "      <div class='row__icons'>" + ListAnimeTorrent + "</div>";
 	results += "    </div>";
 	results += "    <div class='results__row'>";
 	results += "      <div class='row__title'>Audio Book</div>";
