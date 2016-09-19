@@ -1,0 +1,29 @@
+linters:
+  Indentation:
+    enabled: false
+  StringQuotes:
+    enabled: false
+  UrlQuotes:
+    enabled: false
+  SelectorFormat:
+    enabled: false
+  IdSelector:
+    enabled: false
+  PropertySortOrder:
+    enabled: false
+  ColorVariable:
+    enabled: false
+  HexNotation:
+    enabled: false
+  NestingDepth:
+    enabled: false
+  EmptyRule:
+    enabled: false
+  QualifyingElement:
+    enabled: false
+  NameFormat:
+    enabled: false
+  PlaceholderInExtend:
+    enabled: false
+  PseudoElement:
+    enabled: false

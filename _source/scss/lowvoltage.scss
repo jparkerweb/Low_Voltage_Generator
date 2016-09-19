@@ -12,8 +12,8 @@ body {
 	font-family: $font--open-sans;
 	font-weight: 400;
 	font-size: 18px;
-	color: #b1c2c6;
-	background: linear-gradient(90deg, rgb(34, 175, 175) 0%, rgb(19, 28, 154) 100%) rgb(255, 255, 255);
+	color: #FFF;
+	background: linear-gradient(90deg, rgb(45, 64, 227) 0%, rgb(9, 194, 235) 100%) rgb(45, 64, 227);
 }
 
 i {
@@ -50,7 +50,7 @@ header {
 		padding-right: 22px;
 		box-shadow: none;
 		border: 0;
-		border-bottom: 1px solid #3ECCCD;
+		border-bottom: 1px solid #FFF;
 		line-height: 2;
 		font-weight: 300;
 		color: #CFF;
@@ -68,7 +68,7 @@ header {
 
 		&::selection {
 			color: #FFF;
-			background: #3ECCCD;
+			background: #1e77e6;
 		}
 	}
 
@@ -81,15 +81,15 @@ header {
 		border-radius: 50%;
 		line-height: 1;
 		font-weight: 600;
-		color: #3ECCCD;
+		color: #CFF;
 
 		&:before {
 			content: '\00d7';
 		}
 
 		&:hover {
-			background: #3ECCCD;
-			color: #131E9B;
+			background: #FFF;
+			color: #1e77e6;
 			cursor: pointer;
 		}
 	}
@@ -101,12 +101,12 @@ header {
 		border: 1px solid;
 		border-radius: 3px;
 		background: transparent;
-		color: #3ECCCD;
+		color: #CFF;
 
 		&:hover {
-			border-color: #3ECCCD;
-			background: #3ECCCD;
-			color: #131E9B;
+			border-color: #FFF;
+			background: rgb(9, 194, 235);
+			color: #FFF;
 		}
 	}
 }
